@@ -1,11 +1,8 @@
-import Head from 'next/head';
-import MasterLayout from 'components/layout/layout.js';
-function HomePage() {
-  return (
-    <MasterLayout>
-        Welcome to Next!
-    </MasterLayout>
-  );
-}
+const Homepage = () => (
+  <div className="page">
+    <h1>Homepage</h1>
+    <p>Welcome to our website</p>
+  </div>
+);
 
-export default HomePage;
+export default Homepage;

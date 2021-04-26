@@ -1,12 +1,20 @@
-import Head from "next/head";
+// components/layouts/main
+import Header from '../header';
 
+const MainLayout = ({ children }) => (
+  <div className="main-container">
+    {/* <Header /> */}
 
-const MasterLayout = (props) => (
-  <>
-    <Head>
-      <title>Default</title>
-      <meta charSet="utf-8" />
-    </Head>
-  </>
+    <div className="content-wrapper">{children}</div>
+
+    <style jsx global>{`
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+    `}</style>
+  </div>
 );
-export default MasterLayout;
+
+export default MainLayout;
