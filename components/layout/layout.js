@@ -10,7 +10,9 @@ class Layout extends React.Component {
       <>
         <HeadMeta></HeadMeta>
         <Header></Header>
-        {this.props.children}
+        <main id="content">
+          {this.props.children}
+        </main>
         <Footer></Footer>
       </>
     );
