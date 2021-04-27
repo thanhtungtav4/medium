@@ -205,7 +205,7 @@ const Homepage = () => (
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-md-4 bgcover d-none d-md-block pl-md-0 ml-0" style={{backgroundImage: 'url(assets/images/thumb/thumb-800x495.jpg)'}} />
+        <div className="col-lg-6 col-md-4 bgcover d-none d-md-block pl-md-0 ml-0" style={{backgroundImage: 'url(static/images/thumb/thumb-800x495.jpg)'}} />
       </div>
       <div className="divider" />
     </div>
@@ -352,7 +352,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-800x495.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-800x495.jpg)'}} />
           </article>
           <article className="row justify-content-between mb-5 mr-0">
             <div className="col-md-9 ">
@@ -378,7 +378,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-512x512.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-512x512.jpg)'}} />
           </article>
           <article className="row justify-content-between mb-5 mr-0">
             <div className="col-md-9 ">
@@ -403,7 +403,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-512x512-2.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-512x512-2.jpg)'}} />
           </article>
           <article className="row justify-content-between mb-5 mr-0">
             <div className="col-md-9 ">
@@ -428,7 +428,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-512x512-3.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-512x512-3.jpg)'}} />
           </article>
           <article className="row justify-content-between mb-5 mr-0">
             <div className="col-md-9 ">
@@ -453,7 +453,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-512x512-4.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-512x512-4.jpg)'}} />
           </article>
           <div className="row justify-content-between">
             <div className="divider-2" />
@@ -557,7 +557,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-800x495.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-800x495.jpg)'}} />
           </article>
           <article className="row justify-content-between mb-5 mr-0">
             <div className="col-md-9 ">
@@ -582,7 +582,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-512x512.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-512x512.jpg)'}} />
           </article>
           <article className="row justify-content-between mb-5 mr-0">
             <div className="col-md-9 ">
@@ -607,7 +607,7 @@ const Homepage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(assets/images/thumb/thumb-512x512-2.jpg)'}} />
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-512x512-2.jpg)'}} />
           </article>
           <ul className="page-numbers heading">
             <li><span aria-current="page" className="page-numbers current">1</span></li>
