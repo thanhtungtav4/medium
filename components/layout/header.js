@@ -30,7 +30,7 @@ class Header extends React.Component {
         <nav id="main-menu" className="stick d-lg-block d-none">
         <div className="container">
           <div className="menu-primary">
-            <ul>
+            <ul className="d-flex justify-content-between">
               <li className="current-menu-item"><a href="index.html">Home</a></li>
               <li className="menu-item-has-children"><a href="categories.html">Categories</a>
                 <ul className="sub-menu">
@@ -59,7 +59,6 @@ class Header extends React.Component {
         </div>
       </nav>        
       </header>
-
     )
   }
 }
