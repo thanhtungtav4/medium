@@ -14,7 +14,7 @@ const Homepage = () => (
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <article className="first mb-3">
-                <figure><a href="single.html"><img src="static/images/thumb/thumb-1240x700.jpg" alt="post-title" /></a></figure>
+                <figure><a href="single.html"><img src="static/images/thumb/thumb-1240x700.jpg" alt={'post-title'} /></a></figure>
                 <h3 className="entry-title mb-3"><a href="single.html">Home Internet Is Becoming a Luxury for the Wealthy</a></h3>
                 <div className="entry-excerpt">
                   <p>
@@ -111,7 +111,7 @@ const Homepage = () => (
                   <div className="entry-meta align-items-center">
                     <a href="author.html">Adam Philip</a> in <a href="archive.html">Elemental</a><br />                                    
                     <span>Jan 12</span>
-                    <span className="middotDivider" />
+                    <span className="middotDivider"></span>
                     <span className="readingTime" title="3 min read">7 min read</span>
                     <span className="svgIcon svgIcon--star">
                       <svg className="svgIcon-use" width={15} height={15}>
@@ -128,7 +128,7 @@ const Homepage = () => (
                   <div className="entry-meta align-items-center">
                     <a href="author.html">Aaron Gell</a> in <a href="archive.html">Design</a><br />                                    
                     <span>Feb 18</span>
-                    <span className="middotDivider" />
+                    <span className="middotDivider"></span>
                     <span className="readingTime" title="3 min read">9 min read</span>
                     <span className="svgIcon svgIcon--star">
                       <svg className="svgIcon-use" width={15} height={15}>
@@ -145,7 +145,7 @@ const Homepage = () => (
                   <div className="entry-meta align-items-center">
                     <a href="author.html">Atlantic</a> in <a href="archive.html">Zora</a><br />                                    
                     <span>March 17</span>
-                    <span className="middotDivider" />
+                    <span className="middotDivider"></span>
                     <span className="readingTime" title="3 min read">6 min read</span>
                     <span className="svgIcon svgIcon--star">
                       <svg className="svgIcon-use" width={15} height={15}>
@@ -162,7 +162,7 @@ const Homepage = () => (
                   <div className="entry-meta align-items-center">
                     <a href="author.html">Alentica</a> in <a href="archive.html">Police</a><br />                                    
                     <span>Jun 14</span>
-                    <span className="middotDivider" />
+                    <span className="middotDivider"></span>
                     <span className="readingTime" title="3 min read">3 min read</span>
                     <span className="svgIcon svgIcon--star">
                       <svg className="svgIcon-use" width={15} height={15}>
