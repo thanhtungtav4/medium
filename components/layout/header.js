@@ -14,6 +14,8 @@ class Header extends React.Component {
       active: !currentState
     });
   }
+
+  
   render() {
     return(
       <header id="header" className="d-lg-block d-none">
