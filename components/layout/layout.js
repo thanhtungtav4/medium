@@ -1,10 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import HeadMeta from "./head";
-import NavMobile from "./navmobile";
+import NavMobile from "../base/navmobile";
 import Header from "./header";
 import Footer from "./footer";
 import ScrollToTop from "../base/ScrollToTop";
+import ScrollBar from "../base/Topscrollbar";
 
 class Layout extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class Layout extends React.Component {
       <>
       <div id="wrapper">
         <HeadMeta></HeadMeta>
+        <ScrollBar></ScrollBar>
         <NavMobile></NavMobile>
         <Header></Header>
         <main id="content">
@@ -29,8 +31,10 @@ class Layout extends React.Component {
         <script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="static/js/jquery.lazy.min.js"></script> */}
         {/* <script type="text/javascript" src="static/js/scripts.js"></script> */}
+        
       </>
     );
   }
 }
+
 export default Layout;

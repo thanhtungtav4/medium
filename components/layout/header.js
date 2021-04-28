@@ -1,5 +1,5 @@
 import React from "react";
-
+import Navpc from "../base/navpc";
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -40,37 +40,7 @@ class Header extends React.Component {
           </div>
           <div className="clearfix" />
         </div>
-        <nav id="main-menu" className="stick d-lg-block d-none">
-        <div className="container">
-          <div className="menu-primary">
-            <ul className="d-flex justify-content-between">
-              <li className="current-menu-item"><a href="index.html">Home</a></li>
-              <li className="menu-item-has-children"><a href="categories.html">Categories</a>
-                <ul className="sub-menu">
-                  <li><a href="categories.html">Politics</a></li>
-                  <li><a href="categories.html">Health</a></li>
-                  <li><a href="categories.html">Design</a></li>
-                </ul>
-              </li>
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="categories.html">Politics</a></li>
-              <li><a href="categories.html">Health</a></li>
-              <li><a href="categories.html">Design</a></li>
-              <li><a href="categories.html">Startups</a></li>
-              <li><a href="categories.html">Culture</a></li>                                
-              <li><a href="contact.html">Contact</a></li>
-              <li className="menu-item-has-children"><a href="#">More...</a>
-                <ul className="sub-menu">
-                  <li><a href="search.html">Search</a></li>
-                  <li><a href="author.html">Author</a></li>
-                  <li><a href="404.html">404</a></li>                                
-                </ul>
-              </li>                            
-            </ul>
-            <span />
-          </div>
-        </div>
-      </nav>        
+        <Navpc></Navpc>
       </header>
     )
   }

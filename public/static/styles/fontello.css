@@ -55,7 +55,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-search:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e800'; } 
 .icon-down-open-big:before { content: '\e801'; } /* '' */
 .icon-left-open-big:before { content: '\e802'; } /* '' */
 .icon-comment:before { content: '\e803'; } /* '' */
@@ -83,4 +83,4 @@
 .icon-facebook:before { content: '\f30c'; } /* '' */
 .icon-linkedin:before { content: '\f318'; } /* '' */
 .icon-skype:before { content: '\f339'; } /* '' */
-.icon-soundcloud:before { content: '\f348'; } /* '' */
+.icon-soundcloud:before { content: '\f348'; }

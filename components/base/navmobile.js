@@ -4,8 +4,6 @@ class NavMobile extends React.Component {
   render() {
     return(
       <>
-  <div className="top-scroll-bar" />
-  {/*Mobile navigation*/}
   <div className="sticky-header fixed d-lg-none d-md-block">
     <div className="text-right">
       <div className="container mobile-menu-fixed pr-5"> 
