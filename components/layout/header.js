@@ -1,14 +1,27 @@
 import React from "react";
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.toggleSearch = this.toggleSearch.bind(this);
+    this.state = {
+      active: false,
+    };
+  }
+  toggleSearch = () => {
+    const currentState = this.state.active;
+    this.setState({
+      active: !currentState
+    });
+  }
   render() {
     return(
       <header id="header" className="d-lg-block d-none">
         <div className="container">
           <div className="align-items-center w-100">
-            <h1 className="logo float-left navbar-brand"><a href="index.html" className="logo">Merinda</a></h1>
-            <div className="header-right float-right w-50">                    
-              <div className="d-inline-flex float-right text-right align-items-center">                        
+            <h1 className="logo float-start navbar-brand"><a href="index.html" className="logo">Merinda</a></h1>
+            <div className="header-right float-end w-50">                    
+              <div className="d-inline-flex float-end text-right align-items-center">                        
                 <ul className="social-network heading navbar-nav d-lg-flex align-items-center">                       
                   <li><a href="#"><i className="icon-facebook" /></a></li>
                 </ul>
@@ -17,11 +30,11 @@ class Header extends React.Component {
                 </ul>
                 <a className="author-avatar" href="#"><img src="static/images/author-avata-1.jpg" alt={'post-title'} /></a>
               </div>
-              <form action="#" method="get" className="search-form d-lg-flex float-right">
-                <a href="javascript:void(0)" className="searh-toggle">
+              <form action="#" method="get" className={this.state.active ? 'search-form d-lg-flex float-end open-search' : 'search-form d-lg-flex float-end'}>
+                <a href="#" onClick={this.toggleSearch} className="searh-toggle">
                   <i className="icon-search" />
                 </a>
-                <input type="text" className="search_field" placeholder="Search..." defaultValue name="s" />
+                <input type="text" className="search_field" placeholder="Search..." name="s" />
               </form>
             </div>              
           </div>
