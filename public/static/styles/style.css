@@ -416,7 +416,7 @@ input.search_field {
 
 .sticky-header .author-avatar {
   float: right;
-  margin-right: 12px;
+  margin-right: 10%;
 }
 .sticky-header .social-network {
   margin-top: 3px;

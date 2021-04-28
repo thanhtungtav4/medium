@@ -1,10 +1,32 @@
 import React from "react";
 
 class Navpc extends React.Component {
+  listener = null;
+  state = {
+    nav:false
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+     window.removeEventListener('scroll');
+   }
+   handleScroll= () => {
+    if (window.pageYOffset > 140) {
+        if(!this.state.nav){
+          this.setState({ nav: true });
+        }
+    }else{
+        if(this.state.nav){
+          this.setState({ nav: false });
+        }
+    }
+
+  }
   render() {
     return(
       <>
-        <nav id="main-menu" className="stick d-lg-block d-none">
+        <nav id="main-menu" className={this.state.nav ? 'stick d-lg-block d-none scroll-to-fixed-fixed' : 'stick d-lg-block d-none'}>
         <div className="container">
           <div className="menu-primary">
             <ul className="d-flex justify-content-between">

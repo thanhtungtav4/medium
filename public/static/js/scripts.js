@@ -1,22 +1,22 @@
 (function($){
   'use strict';
 
-  function stickMenu() {
-      $(".stick").scrollToFixed({
-          preFixed: function() {
-              $(".menu-top").animate({
-                  height: 83
-              }, 400, function() {
-                  $(this).css("overflow", "visible")
-              })
-          },
-          postFixed: function() {
-              $(".menu-top").css("overflow", "hidden").animate({
-                  height: 0
-              }, 400)
-          }
-      })
-  }
+  // function stickMenu() {
+  //     $(".stick").scrollToFixed({
+  //         preFixed: function() {
+  //             $(".menu-top").animate({
+  //                 height: 83
+  //             }, 400, function() {
+  //                 $(this).css("overflow", "visible")
+  //             })
+  //         },
+  //         postFixed: function() {
+  //             $(".menu-top").css("overflow", "hidden").animate({
+  //                 height: 0
+  //             }, 400)
+  //         }
+  //     })
+  // }
 
   function mobileMenu() {
 

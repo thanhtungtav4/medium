@@ -37,7 +37,7 @@ export default class ScrollToTop extends Component {
   render() {
     const { is_visible } = this.state;
     return (
-      <>
+    <>
         {is_visible && (
             <a onClick={() => this.scrollToTop()}  className="back-to-top heading"><i className="icon-left-open-big" /><span className="d-lg-inline d-md-none">Top</span></a>
         )}
