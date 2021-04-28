@@ -29,7 +29,7 @@ class Header extends React.Component {
                   <li><a href="#" className="btn">Contact</a></li>
                 </ul>
                 <a className="author-avatar" href="#">
-                  <i class="gg-sun"></i>
+                  <i className="gg-sun"></i>
                 </a>
               </div>
               <form action="#" method="get" className={this.state.active ? 'search-form d-lg-flex float-end open-search' : 'search-form d-lg-flex float-end'}>
