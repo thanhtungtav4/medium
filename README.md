@@ -8,3 +8,4 @@ https://medium.com/@andreasmcd/how-my-team-converted-our-website-from-jquery-to-
 https://medium.com/@bretcameron/react-intro-for-developers-who-know-jquery-1e9dd65863a8
 https://www.npmjs.com/package/react-lazyload
 https://www.freecodecamp.org/news/how-to-optimize-react-applications-with-lazy-loading-232183e02768/
+https://dev.to/abbeyperini/toggle-dark-mode-in-react-28c9
