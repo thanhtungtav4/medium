@@ -38,7 +38,7 @@ const Homepage = () => (
             <div className="col-sm-12 col-md-6">
               <article className="post-has-bg">
                 <div className="mb-3 d-flex row">
-                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512.jpg" alt="post-title" /></a></figure>
+                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512.jpg" alt={'post-title'} /></a></figure>
                   <div className="entry-content col-8 col-md-8 pl-md-0">                                                    
                     <h5 className="entry-title mb-3"><a href="single.html">The Night My Doorbell Camera Captured a Shooting</a></h5>
                     <div className="entry-meta align-items-center">
@@ -57,7 +57,7 @@ const Homepage = () => (
               </article>
               <article>
                 <div className="mb-3 d-flex row">
-                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt="post-title" /></a></figure>
+                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={'post-title'} /></a></figure>
                   <div className="entry-content col-8 col-md-8 pl-md-0">
                     <h5 className="entry-title mb-3"><a href="single.html">Privacy Is Just the Beginning of the Debate Over Tech</a></h5>
                     <div className="entry-meta align-items-center">
@@ -76,7 +76,7 @@ const Homepage = () => (
               </article>
               <article>
                 <div className="mb-3 d-flex row">
-                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512-2.jpg" alt="post-title" /></a></figure>
+                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512-2.jpg" alt={'post-title'} /></a></figure>
                   <div className="entry-content col-8 col-md-8 pl-md-0">
                     <div className="capsSubtle mb-2">based on your reading history</div>
                     <h5 className="entry-title mb-3"><a href="single.html">Want To Make Millions? Then Act Like a Millionaire</a></h5>
@@ -217,7 +217,7 @@ const Homepage = () => (
           <div className="row justify-content-between">
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">I Learned How to Die Before I Knew How to Live</a></h5>
                   <div className="entry-excerpt">
@@ -241,7 +241,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Is 'Interactive Storytelling' the Future of Media?</a></h5>
                   <div className="entry-excerpt">
@@ -265,7 +265,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">How NOT to get a $30k bill from Firebase</a></h5>
                   <div className="entry-excerpt">
@@ -289,7 +289,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Google Can't Figure Out What YouTube Is</a></h5>
                   <div className="entry-excerpt">
@@ -459,7 +459,7 @@ const Homepage = () => (
             <div className="divider-2" />
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">I Learned How to Die Before I Knew How to Live</a></h5>
                   <div className="entry-meta align-items-center">
@@ -478,7 +478,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Is 'Interactive Storytelling' the Future of Media?</a></h5>
                   <div className="entry-meta align-items-center">
@@ -497,7 +497,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">How NOT to get a $30k bill from Firebase</a></h5>
                   <div className="entry-meta align-items-center">
@@ -516,7 +516,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt="post-title" /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt={'post-title'} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Google Can't Figure Out What YouTube Is</a></h5>
                   <div className="entry-meta align-items-center">

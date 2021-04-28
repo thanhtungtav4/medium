@@ -15,7 +15,7 @@ class Header extends React.Component {
                 <ul className="top-menu heading navbar-nav w-100 d-lg-flex align-items-center">
                   <li><a href="#" className="btn">Contact</a></li>
                 </ul>
-                <a className="author-avatar" href="#"><img src="static/images/author-avata-1.jpg" alt /></a>
+                <a className="author-avatar" href="#"><img src="static/images/author-avata-1.jpg" alt={'post-title'} /></a>
               </div>
               <form action="#" method="get" className="search-form d-lg-flex float-right">
                 <a href="javascript:void(0)" className="searh-toggle">
