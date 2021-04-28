@@ -21,16 +21,8 @@ class Layout extends React.Component {
         </main>
         <Footer></Footer>
         </div>
-        {/*#wrapper*/}
         <ScrollToTop></ScrollToTop>
-        {/* <a href="#" className="back-to-top heading"><i className="icon-left-open-big" /><span className="d-lg-inline d-md-none">Top</span></a> */}
-        {/* <script type="text/javascript" src="static/js/jquery.min.js"></script>
-        <script type="text/javascript" src="static/js/bootstrap.js"></script>
-        <script type="text/javascript" src="static/js/jquery-scrolltofixed-min.js"></script>
-        <script type="text/javascript" src="static/js/theia-sticky-sidebar.js"></script>
-        <script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="static/js/jquery.lazy.min.js"></script> */}
-        {/* <script type="text/javascript" src="static/js/scripts.js"></script> */}
+
         
       </>
     );

@@ -4,14 +4,22 @@ class NavMobile extends React.Component {
   constructor(props) {
     super(props);
     this.jsMenu = this.jsMenu.bind(this);
+    this.jsMenuChild = this.jsMenuChild.bind(this);
     this.state = {
       is_open: false,
+      is_openChild: false,
     };
   }
   jsMenu = () => {
     const currentState = this.state.is_open;
     this.setState({
       is_open: !currentState
+    });
+  }
+  jsMenuChild= () =>{
+    const currentStateChild = this.state.is_openChild;
+    this.setState({
+      is_openChild: !currentStateChild
     });
   }
   render() {
@@ -21,7 +29,7 @@ class NavMobile extends React.Component {
     <div className="text-right">
       <div className="container mobile-menu-fixed pr-5"> 
         <h1 className="logo-small navbar-brand"><a href="index.html" className="logo">Merinda</a></h1>
-        <a className="author-avatar" href="#"><img src="static/images/author-avata-1.jpg" alt /></a>
+        <a className="author-avatar" href="#"><img src="static/images/author-avata-1.jpg" alt={'ccccc'} /></a>
         <ul className="social-network heading navbar-nav d-lg-flex align-items-center">                       
           <li><a href="#"><i className="icon-facebook" /></a></li>
         </ul>
@@ -40,16 +48,25 @@ class NavMobile extends React.Component {
       <nav>
         <ul>
           <li className="current-menu-item"><a href="index.html">Home</a></li>
-          <li className="menu-item-has-children"><a href="categories.html">Categories</a>
+          <li className={this.state.is_openChild ? 'menu-item-has-children' : 'menu-item-has-children open-submenu'}><a href="categories.html">Categories</a>
             <ul className="sub-menu">
               <li><a href="categories.html">Politics</a></li>
               <li><a href="categories.html">Health</a></li>
               <li><a href="categories.html">Design</a></li>
             </ul>
+            <span className="sub-menu-toggle" onClick={() => this.jsMenuChild()}></span>
           </li>
-          <li><a href="typography.html">Typography</a></li>
+          <li><a href="typography.html">Typography</a>
+          </li>
           <li><a href="categories.html">Politics</a></li>
-          <li><a href="categories.html">Health</a></li>                             
+          <li className={this.state.is_openChild ? 'menu-item-has-children' : 'menu-item-has-children open-submenu'}><a href="categories.html">Health</a>
+            <ul className="sub-menu">
+                <li><a href="categories.html">Politics</a></li>
+                <li><a href="categories.html">Health</a></li>
+                <li><a href="categories.html">Design</a></li>
+            </ul>
+            <span className="sub-menu-toggle" ></span>
+          </li>                             
           <li><a href="contact.html">Contact</a></li>                           
         </ul>
       </nav>                

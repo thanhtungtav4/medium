@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from "../components/layout/layout";
+import StickyBox from "react-sticky-box";
+
 const Homepage = () => (
   <Layout>
     <>
@@ -14,7 +16,7 @@ const Homepage = () => (
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <article className="first mb-3">
-                <figure><a href="single.html"><img src="static/images/thumb/thumb-1240x700.jpg" alt={'post-title'} /></a></figure>
+                <figure><a href="single.html"><img src="static/images/thumb/thumb-1240x700.jpg" alt={true} /></a></figure>
                 <h3 className="entry-title mb-3"><a href="single.html">Home Internet Is Becoming a Luxury for the Wealthy</a></h3>
                 <div className="entry-excerpt">
                   <p>
@@ -38,7 +40,7 @@ const Homepage = () => (
             <div className="col-sm-12 col-md-6">
               <article className="post-has-bg">
                 <div className="mb-3 d-flex row">
-                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512.jpg" alt={'post-title'} /></a></figure>
+                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512.jpg" alt={true} /></a></figure>
                   <div className="entry-content col-8 col-md-8 pl-md-0">                                                    
                     <h5 className="entry-title mb-3"><a href="single.html">The Night My Doorbell Camera Captured a Shooting</a></h5>
                     <div className="entry-meta align-items-center">
@@ -57,7 +59,7 @@ const Homepage = () => (
               </article>
               <article>
                 <div className="mb-3 d-flex row">
-                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={'post-title'} /></a></figure>
+                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={true} /></a></figure>
                   <div className="entry-content col-8 col-md-8 pl-md-0">
                     <h5 className="entry-title mb-3"><a href="single.html">Privacy Is Just the Beginning of the Debate Over Tech</a></h5>
                     <div className="entry-meta align-items-center">
@@ -76,7 +78,7 @@ const Homepage = () => (
               </article>
               <article>
                 <div className="mb-3 d-flex row">
-                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512-2.jpg" alt={'post-title'} /></a></figure>
+                  <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512-2.jpg" alt={true} /></a></figure>
                   <div className="entry-content col-8 col-md-8 pl-md-0">
                     <div className="capsSubtle mb-2">based on your reading history</div>
                     <h5 className="entry-title mb-3"><a href="single.html">Want To Make Millions? Then Act Like a Millionaire</a></h5>
@@ -217,7 +219,7 @@ const Homepage = () => (
           <div className="row justify-content-between">
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">I Learned How to Die Before I Knew How to Live</a></h5>
                   <div className="entry-excerpt">
@@ -241,7 +243,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Is 'Interactive Storytelling' the Future of Media?</a></h5>
                   <div className="entry-excerpt">
@@ -265,7 +267,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">How NOT to get a $30k bill from Firebase</a></h5>
                   <div className="entry-excerpt">
@@ -289,7 +291,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Google Can't Figure Out What YouTube Is</a></h5>
                   <div className="entry-excerpt">
@@ -315,7 +317,7 @@ const Homepage = () => (
         </div>
         <div className="col-md-2">
           <div className="sidebar-widget ads">
-            <a href="#"><img src="static/images/ads/ads-1.png" alt="ads" /></a>
+            <a href="#"><img src="static/images/ads/ads-1.png" alt={true} /></a>
           </div>
         </div>
       </div>
@@ -459,7 +461,7 @@ const Homepage = () => (
             <div className="divider-2" />
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">I Learned How to Die Before I Knew How to Live</a></h5>
                   <div className="entry-meta align-items-center">
@@ -478,7 +480,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-2.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Is 'Interactive Storytelling' the Future of Media?</a></h5>
                   <div className="entry-meta align-items-center">
@@ -497,7 +499,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-3.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">How NOT to get a $30k bill from Firebase</a></h5>
                   <div className="entry-meta align-items-center">
@@ -516,7 +518,7 @@ const Homepage = () => (
             </article>
             <article className="col-md-6">
               <div className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt={'post-title'} /></a></figure>
+                <figure className="col-md-5"><a href="single.html"><img src="static/images/thumb/thumb-512x512-4.jpg" alt={true} /></a></figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">Google Can't Figure Out What YouTube Is</a></h5>
                   <div className="entry-meta align-items-center">
@@ -620,12 +622,12 @@ const Homepage = () => (
             <li><a className="next page-numbers" href="#"><i className="icon-right-open-big" /></a></li>
           </ul>
         </div> {/*col-md-8*/}
-        <div className="col-md-4 pl-md-5 sticky-sidebar">                    
-          <div className="sidebar-widget latest-tpl-4">
-            <h4 className="spanborder">
-              <span>Popular</span>
-            </h4>
-            <ol>
+        <div className="col-md-4 pl-md-5 sticky-sidebar ">                    
+          <StickyBox className="sidebar-widget latest-tpl-4">
+              <h4 className="spanborder">
+                <span>Popular</span>
+              </h4>
+              <ol>
               <li className="d-flex">
                 <div className="post-count">01</div>
                 <div className="post-content">
@@ -695,15 +697,16 @@ const Homepage = () => (
                 </div>
               </li>
             </ol>
-          </div>
-        </div> {/*col-md-4*/}
+          </StickyBox>
+        </div> 
+        {/*col-md-4*/}
       </div>
     </div> {/*content-widget*/}
   </div>
   <div className="content-widget">
     <div className="container">
       <div className="sidebar-widget ads">
-        <a href="#"><img src="static/images/ads/ads-2.png" alt="ads" /></a>
+        <a href="#"><img src="static/images/ads/ads-2.png" alt={true} /></a>
       </div>
       <div className="hr" />
     </div>

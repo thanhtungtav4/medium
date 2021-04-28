@@ -72,11 +72,11 @@
   //   });
   // }
 
-  function theiaSticky() {
-      $('.sticky-sidebar').theiaStickySidebar({
-          additionalMarginTop: 70
-      });
-    };
+  // function theiaSticky() {
+  //     $('.sticky-sidebar').theiaStickySidebar({
+  //         additionalMarginTop: 70
+  //     });
+  //   };
 
   // function owlCarausel() {
   //   $(document).ready(function(){
