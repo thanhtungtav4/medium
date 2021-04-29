@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.theme-dark {
+.dark {
   --dark-text: #292929;
   --light-text: #F9F8F8;  
   --dark-background: #2F4550;
@@ -11,7 +11,7 @@
   --accent: #B8DBD9;
   --button-border: #B8DBD9;
 }
-.theme-light {
+.light {
   --dark-text: #5E4B56;
   --light-text: #5E4B56;
   --dark-background: #DBE7E4;

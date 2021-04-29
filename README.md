@@ -10,3 +10,4 @@ https://www.npmjs.com/package/react-lazyload
 https://www.freecodecamp.org/news/how-to-optimize-react-applications-with-lazy-loading-232183e02768/
 https://dev.to/abbeyperini/toggle-dark-mode-in-react-28c9
 https://dev.to/enochndika/dark-mode-with-tailwindcss-in-next-js-2if5
+https://medium.com/@shoaibhassan_/install-wordpress-with-postgresql-using-apache-in-5-min-a26078d496fb
