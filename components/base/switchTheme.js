@@ -5,12 +5,10 @@ export default function switchTheme() {
   const { theme, setTheme } = useTheme();
 useEffect(() => {
     setIsMounted(true);
-    console.log('y')
   }, []);
 const switchTheme = () => {
     if (isMounted) {
       setTheme(theme === "light" ? "dark" : "light");
-      console.log('x')
     }
   };
 return (
