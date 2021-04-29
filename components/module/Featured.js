@@ -32,7 +32,7 @@ export default class Featured extends Component {
               <a className="btn btn-green d-inline-block mb-4 mb-md-0" href="archive.html">All Featured</a>
             </div>
             <div className="col-sm-12 col-md-6">
-              <article className="post-has-bg">
+              <article>
                 <div className="mb-3 d-flex row">
                   <figure className="col-4 col-md-4"><a href="single.html"><img src="static/images/thumb/thumb-700x512.jpg" alt={true} /></a></figure>
                   <div className="entry-content col-8 col-md-8 pl-md-0">                                                    

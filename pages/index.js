@@ -26,7 +26,7 @@ const Homepage = () => (
         <Trending/>
       </div>
       <div className="divider" />           
-    </div> {/*end container*/}
+    </div> 
   </div> {/*section-featured*/}
   <div className="content-widget">
     <div className="container">
@@ -549,14 +549,6 @@ const Homepage = () => (
       </div>
     </div> {/*content-widget*/}
   </div>
-  <div className="content-widget">
-    <div className="container">
-      <div className="sidebar-widget ads">
-        <a href="#"><img src="static/images/ads/ads-2.png" alt={true} /></a>
-      </div>
-      <div className="hr" />
-    </div>
-  </div> {/*content-widget*/}
   </Layout>
  
 </>
