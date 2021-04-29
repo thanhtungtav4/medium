@@ -1,17 +1,12 @@
 import React, { Component } from "react";
-import ItemPost01 from "../base/ItemPost01";
-export default class Featured extends Component {  
+export default class ItemPost03 extends Component {  
   render() {
   return (
     <>
-            <div className="col-sm-12 col-md-9 col-xl-9">
-          <h2 className="spanborder h4">
-            <span>Editor's Picks</span>
-          </h2>
-          <div className="row">
-            <div className="col-sm-12 col-md-6">
-              <article className="first mb-3">
-                <figure><a href="single.html"><img src="static/images/thumb/thumb-1240x700.jpg" alt={true} /></a></figure>
+          <article className="row justify-content-between mb-5 mr-0">
+            <div className="col-md-9 ">
+              <div className="align-self-center">
+                <div className="capsSubtle mb-2">Editors' Pick</div>
                 <h3 className="entry-title mb-3"><a href="single.html">Home Internet Is Becoming a Luxury for the Wealthy</a></h3>
                 <div className="entry-excerpt">
                   <p>
@@ -19,26 +14,22 @@ export default class Featured extends Component {
                   </p>
                 </div>
                 <div className="entry-meta align-items-center">
-                  <a href="author.html">Dave Gershgorn</a> in <a href="archive.html">OneZero</a><br />                                  
-                  <span>Jun 14</span>
+                  <a href="author.html">Dave Gershgorn</a> in <a href="archive.html">OneZero</a><br />                                    
+                  <span>May 21</span>
                   <span className="middotDivider" />
-                  <span className="readingTime" title="3 min read">3 min read</span>
+                  <span className="readingTime" title="3 min read">5 min read</span>
                   <span className="svgIcon svgIcon--star">
                     <svg className="svgIcon-use" width={15} height={15}>
                       <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z" />
                     </svg>
                   </span>
                 </div>
-              </article>
-              <a className="btn btn-green d-inline-block mb-4 mb-md-0" href="archive.html">All Featured</a>
+              </div>
             </div>
-            <div className="col-sm-12 col-md-6">
-                <ItemPost01/>
-            </div>
-          </div>                
-        </div>{/*end featured*/}                
-        {/*begin Trending*/}
+            <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-800x495.jpg)'}} />
+          </article>
+        
     </>
-  );
-}
+    );
+  }
 }

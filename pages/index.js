@@ -41,14 +41,14 @@ const Homepage = () => (
       </div>
       <div className="divider-2" />
     </div>
-  </div> {/*content-widget*/}
+  </div> 
   <div className="content-widget">
     <div className="container">
       <div className="row">
         <MostRecent/>
         <Popular/>
       </div>
-    </div> {/*content-widget*/}
+    </div>
   </div>
   </Layout>
  
