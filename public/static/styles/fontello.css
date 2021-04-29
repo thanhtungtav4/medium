@@ -85,13 +85,13 @@
 .icon-skype:before { content: '\f339'; } /* '' */
 .icon-soundcloud:before { content: '\f348'; }
 
-.gg-moon,
-.gg-moon::after {
+.dark .gg-sun,
+.dark .gg-sun::after {
     display: block;
     box-sizing: border-box;
     border-radius: 50%
 }
-.gg-moon {
+.dark .gg-sun {
     overflow: hidden;
     position: relative;
     transform: rotate(-135deg) scale(var(--ggs,1));
@@ -100,7 +100,7 @@
     border: 2px solid;
     border-bottom-color: transparent
 }
-.gg-moon::after {
+.dark .gg-sun::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -110,7 +110,7 @@
     top: 8px;
     left: 2px
 }
-.gg-sun {
+.light .gg-sun {
   box-sizing: border-box;
   position: relative;
   display: block;
@@ -134,8 +134,9 @@
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent
 }
-.gg-sun::after,
-.gg-sun::before {
+
+.light .gg-sun::after,
+.light .gg-sun::before {
   content: "";
   display: block;
   box-sizing: border-box;
@@ -147,9 +148,10 @@
   left: -6px;
   top: 5px
 }
-.gg-sun::before {
+.light .gg-sun::before {
   transform: rotate(-45deg)
 }
-.gg-sun::after {
+.light .gg-sun::after {
   transform: rotate(45deg)
 }
+ 

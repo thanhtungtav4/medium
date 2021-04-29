@@ -1,11 +1,14 @@
 import React from "react";
 import Navpc from "../base/navpc";
+import SwitchTheme from "../base/switchTheme";
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.toggleSearch = this.toggleSearch.bind(this);
     this.state = {
       active: false,
+      isMounted : false,
+      setIsMounted : false,
     };
   }
   toggleSearch = () => {
@@ -14,8 +17,6 @@ class Header extends React.Component {
       active: !currentState
     });
   }
-
-  
   render() {
     return(
       <header id="header" className="d-lg-block d-none">
@@ -30,9 +31,7 @@ class Header extends React.Component {
                 <ul className="top-menu heading navbar-nav w-100 d-lg-flex align-items-center">
                   <li><a href="#" className="btn">Contact</a></li>
                 </ul>
-                <a className="author-avatar" href="#">
-                  <i className="gg-sun"></i>
-                </a>
+                <SwitchTheme/>
               </div>
               <form action="#" method="get" className={this.state.active ? 'search-form d-lg-flex float-end open-search' : 'search-form d-lg-flex float-end'}>
                 <a href="#" onClick={this.toggleSearch} className="searh-toggle">

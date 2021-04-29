@@ -1,26 +1,21 @@
 import { useEffect, useState } from "react";
-import Head from "next/head";
 import { useTheme } from "next-themes";
-export default function Home() {
+export default function switchTheme() {
   const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 useEffect(() => {
     setIsMounted(true);
+    console.log('y')
   }, []);
 const switchTheme = () => {
     if (isMounted) {
       setTheme(theme === "light" ? "dark" : "light");
+      console.log('x')
     }
   };
 return (
-    <div className="text-center">
-      <Head>
-      
-      </Head>
-      <h1 className="text:2xl">
-       Dark mode with Tailwind and Next- themes
-      </h1>
-      <button onClick={switchTheme}>Change theme</button>
-    </div>
+  <a className="author-avatar" onClick={switchTheme} >
+    <i className="gg-sun"></i>
+  </a>
   );
 }
