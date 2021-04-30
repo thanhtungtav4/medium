@@ -22,10 +22,9 @@
 	--light-text-menu: #292929;
 	--dark-background: #ffffff;
 	--light-background: #EDDCD2;
-	--accent: #DBE7E4;
+	--accent: #353535;
 	--button-border: #5E4B56;
 }
-
 a {
 	color: var(--dark-text);
 }
@@ -451,12 +450,12 @@ a.read-more:hover {
 }
 
 .spanborder {
-	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	border-bottom: 1px solid var(--light-text);
 	margin-bottom: 1.8rem;
 	font-weight: 700;
 }
 .spanborder span {
-	border-bottom: 1px solid rgba(0, 0, 0, .53);
+	border-bottom: 1px solid var(--light-text);
 	display: inline-block;
 	padding-bottom: 0.5rem;
 	margin-bottom: -1px;
@@ -510,7 +509,7 @@ a.searh-toggle:active {
 	border-radius: 50px;
 }
 .search-form.open-search {
-	border: 1px solid rgba(0, 0, 0, .34);
+	border: 1px solid var(--accent);
 }
 
 input.search_field {
@@ -616,8 +615,8 @@ input.search_field {
 /*Meta*/
 
 .entry-meta {
-	color: rgba(0, 0, 0, .54) !important;
-	fill: rgba(0, 0, 0, .54) !important;
+	color: var(--light-text);
+	fill: var(--light-text);
 	font-size: 0.8rem;
 	line-height: 1.2;
 }
@@ -642,17 +641,14 @@ input.search_field {
 	content: '';
 	width: 2px;
 	height: 2px;
-	background: rgba(0, 0, 0, .54) !important;
+	background: var(--light-text);
 	position: absolute;
 	top: 50%;
 	left: 45%;
 }
-
-.svgIcon {}
-
 .svgIcon {
-	color: rgba(0, 0, 0, .54) !important;
-	fill: rgba(0, 0, 0, .54) !important;
+	color: var(--light-text);
+	fill: var(--light-text);
 	font-size: 15px !important;
 }
 
@@ -744,7 +740,7 @@ header .logo-wrapper {
 .top-menu a,
 .searh-toggle,
 .search-form {
-	color: rgba(0, 0, 0, .5);
+	color: var(--accent);
 	font-size: 0.875rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
@@ -753,27 +749,27 @@ header .logo-wrapper {
 }
 
 .top-menu a.btn {
-	border: 1px solid rgba(0, 0, 0, .5);
+	border: 1px solid var(--accent);
 	padding: 0 .8rem;
 	border-radius: 3px;
 	margin-left: 1rem;
-	color: rgba(0, 0, 0, .84);
+	color: var(--accent);
 }
 
 .social-network a:hover,
 .top-menu a:hover,
 .searh-toggle:hover {
-	color: rgba(0, 0, 0, .7);
+	color: var(--accent);
 }
 
 .social-network a {
-	color: rgba(0, 0, 0, .54);
+	color: var(--accent);
 	border-radius: 50%;
 	font-size: 13px;
 	margin-left: 0.2rem;
-	border: 1px solid rgba(0, 0, 0, .34);
+	border: 1px solid var(--accent);
 	width: 26px;
-	height: 26px;
+	height: 26px;  
 	display: block;
 	line-height: 23px;
 	text-align: center;
@@ -1242,11 +1238,11 @@ ul.page-numbers li {
 }
 
 ul.page-numbers li a {
-	color: rgba(0, 0, 0, .54) !important;
+	color: var(--accent);
 }
 
 ul.page-numbers li span.current {
-	color: rgba(0, 0, 0, .84) !important;
+	color: var(--light-text);
 	display: block;
 	text-align: center;
 	font-weight: bold;
