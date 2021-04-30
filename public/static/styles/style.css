@@ -51,12 +51,12 @@ a:focus {
 
 .excerpt,
 .search-popup input.search_field {
-	color: #777;
+	color: var(--accent);
 }
 
 .meta,
 .meta a {
-	color: #535353;
+	color:  var(--accent);
 }
 
 
@@ -983,7 +983,7 @@ header {
 	z-index: 100;
 	left: 0;
 	padding: 0;
-	background: #fff;
+	background: var(--light-background);
 	padding: 10px 20px;
 	min-width: 220px;
 	margin-left: -20px;
