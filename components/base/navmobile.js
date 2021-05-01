@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image';
 class NavMobile extends React.Component {
   constructor(props) {
     super(props);
@@ -29,7 +29,10 @@ class NavMobile extends React.Component {
     <div className="text-right">
       <div className="container mobile-menu-fixed pr-5"> 
         <h1 className="logo-small navbar-brand"><a href="index.html" className="logo">Merinda</a></h1>
-        <a className="author-avatar" href="#"><img src="static/images/author-avata-1.jpg" alt={true} /></a>
+        <a className="author-avatar" href="#">
+          <Image src="/static/images/author-avata-1.jpg" width={32}
+      height={32} alt="true"/>
+        </a>
         <ul className="social-network heading navbar-nav d-lg-flex align-items-center">                       
           <li><a href="#"><i className="icon-facebook" /></a></li>
         </ul>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Image from 'next/image';
 import ItemPost01 from "../base/ItemPost01";
 export default class Featured extends Component {  
   render() {
@@ -11,7 +12,9 @@ export default class Featured extends Component {
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <article className="first mb-3">
-                <figure><a href="single.html"><img src="static/images/thumb/thumb-1240x700.jpg" alt={true} /></a></figure>
+                <figure><a href="single.html">
+                  <Image src="/static/images/thumb/thumb-1240x700.jpg" layout="responsive"  alt="true" width={405} height={277}/>
+                  </a></figure>
                 <h3 className="entry-title mb-3"><a href="single.html">Home Internet Is Becoming a Luxury for the Wealthy</a></h3>
                 <div className="entry-excerpt">
                   <p>
