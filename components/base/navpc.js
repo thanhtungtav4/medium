@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 class Navpc extends React.Component {
   listener = null;
@@ -30,7 +31,7 @@ class Navpc extends React.Component {
         <div className="container">
           <div className="menu-primary">
             <ul className="d-flex justify-content-between">
-              <li className="current-menu-item"><a href="index.html">Home</a></li>
+              <li className="current-menu-item"><Link href="/">Home</Link></li>
               <li className="menu-item-has-children"><a href="categories.html">Categories</a>
                 <ul className="sub-menu">
                   <li><a href="categories.html">Politics</a></li>
