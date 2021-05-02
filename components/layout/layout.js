@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 import NavMobile from "../base/navmobile";
 import Header from "./header";
 import Footer from "./footer";
@@ -12,9 +13,11 @@ class Layout extends React.Component {
         <ScrollBar/>
         <NavMobile/>
         <Header/>
-        <main id="content">
-          {this.props.children}
-        </main>
+        <LazyLoad>
+          <main id="content">
+            {this.props.children}
+          </main>
+        </LazyLoad>
         <Footer/>
         <ScrollToTop/>
       </>
