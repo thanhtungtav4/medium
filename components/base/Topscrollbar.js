@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LazyLoad from 'react-lazyload';
 export default class ScrollBar extends Component {  
   state = {
     scrollPostion: 0
@@ -39,10 +40,8 @@ export default class ScrollBar extends Component {
 
   render() {
   return (
-     <>
-      <div className="top-scroll-bar" style={{width: this.state.scrollPostion + "%"}} >
-      </div>
-     </>
+      <LazyLoad className="top-scroll-bar" style={{width: this.state.scrollPostion + "%"}} >
+      </LazyLoad>
   );
 }
 }

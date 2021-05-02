@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 import Image from 'next/image';
 class NavMobile extends React.Component {
   constructor(props) {
@@ -24,8 +25,7 @@ class NavMobile extends React.Component {
   }
   render() {
     return(
-      <>
-  <div className="sticky-header fixed d-lg-none d-md-block">
+  <LazyLoad className="sticky-header fixed d-lg-none d-md-block">
     <div className="text-right">
       <div className="container mobile-menu-fixed pr-5"> 
         <h1 className="logo-small navbar-brand"><a href="index.html" className="logo">Merinda</a></h1>
@@ -74,10 +74,7 @@ class NavMobile extends React.Component {
         </ul>
       </nav>                
     </div>
-  </div>
-  {/*Mobile navigation*/}
-</>
-
+  </LazyLoad>
     )
   }
 }

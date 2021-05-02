@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 import Link from 'next/link';
 
 class Navpc extends React.Component {
@@ -26,7 +27,7 @@ class Navpc extends React.Component {
   }
   render() {
     return(
-      <>
+      <LazyLoad>
         <nav id="main-menu" className={this.state.nav ? 'stick d-lg-block d-none scroll-to-fixed-fixed' : 'stick d-lg-block d-none'}>
         <div className="container">
           <div className="menu-primary">
@@ -58,7 +59,7 @@ class Navpc extends React.Component {
           </div>
         </div>
       </nav>
-</>
+      </LazyLoad>
 
     )
   }

@@ -1,9 +1,13 @@
 import React from "react";
-
+import LazyLoad from 'react-lazyload';
 class Footer extends React.Component {
+  componentDidMount() {
+    console.log('I was triggered during componentDidMount')
+  }
   render() {
     return (
-      <footer className="mt-5">
+      <LazyLoad>
+        <footer className="mt-5">
         <div className="container">
           <div className="divider" />
           <div className="row">
@@ -20,6 +24,7 @@ class Footer extends React.Component {
           </div>    
         </div>
       </footer>
+      </LazyLoad>
     );
   }
 }
