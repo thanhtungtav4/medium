@@ -5,7 +5,6 @@ import LazyLoad from "react-lazyload";
 import Layout from "../components/layout/layout";
 import Share from "../components/module/post/Share";
 import Content from "../components/module/post/Content";
-import { fetchAPI } from "../lib/api";
 export default class PostDetail extends Component {
   render() {
     return (
@@ -243,14 +242,4 @@ export default class PostDetail extends Component {
     );
   }
 }
-export async function getCate() {
-  const articles = await fetchAPI("/posts/10");
-  return {
-    paths: articles.map((article) => ({
-      params: {
-        slug: article.slug,
-      },
-    })),
-    fallback: false,
-  };
-}
+

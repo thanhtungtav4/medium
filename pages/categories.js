@@ -5,8 +5,31 @@ import Popular from "../components/module/Popular";
 import FeaturedPost from "../components/module/categories/FeaturedPost";
 import ItemPost03 from "../components/base/ItemPost03";
 import ItemPost from "../components/module/categories/ItemPost";
+//import API from "../lib/api";
+import axios from 'axios';
 export default class Categories extends Component {  
+constructor(props){
+  super(props);
+  this.state = {
+    posts : []
+  }
+}
+  componentDidMount(){
+    axios.get('https://api-fast.ml/wp-json/wp/v2/posts')
+    .then(res => {
+      this.setState({
+        posts: res.data
+      })
+    })
+    .catch(err =>console.log(err));
+  }
   render() {
+    var {posts} = this.state;
+    var elmItem = posts.map((post, index) => {
+      return(
+        <ItemPost key={index} post={post}/>
+      );
+    })
   return (
   <>
    <Head>
@@ -35,10 +58,8 @@ export default class Categories extends Component {
         <ItemPost03/>
         <div className="row justify-content-between">
           <div className="divider-2" />
-            <ItemPost/>
-            <ItemPost/>
-            <ItemPost/>
-            <ItemPost/>
+            
+            {elmItem}
         </div>
         <ItemPost03/>
         <ItemPost03/>

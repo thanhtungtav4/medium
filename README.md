@@ -24,3 +24,11 @@ Frontity - Khung React cho WordPress
 //////////////
 https://glitch.com
 //////////////////
+
+///
+https://codesandbox.io/s/r094p6ylkq?file=/src/index.js
+///// api
+
+https://github.com/developit/unfetch#responseheaders
+
+https://www.digitalocean.com/community/tutorials/react-axios-react
