@@ -163,13 +163,6 @@ a:hover {
 .container {
 	position: relative;
 }
-
-.entry-title,
-.entry-title a:hover {
-	color: rgba(0, 0, 0, .84) !important;
-	fill: rgba(0, 0, 0, .84) !important;
-}
-
 .entry-title {
 	overflow: hidden !important;
 	text-overflow: ellipsis !important;

@@ -5,8 +5,8 @@ import Popular from "../components/module/Popular";
 import FeaturedPost from "../components/module/categories/FeaturedPost";
 import ItemPost03 from "../components/base/ItemPost03";
 import ItemPost from "../components/module/categories/ItemPost";
-//import API from "../lib/api";
-import axios from 'axios';
+import API from "../lib/api";
+//import axios from 'axios';
 export default class Categories extends Component {  
 constructor(props){
   super(props);
@@ -15,7 +15,7 @@ constructor(props){
   }
 }
   componentDidMount(){
-    axios.get('https://api-fast.ml/wp-json/wp/v2/posts')
+    API.get('/posts')
     .then(res => {
       this.setState({
         posts: res.data

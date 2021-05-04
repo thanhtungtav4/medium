@@ -13,7 +13,7 @@ export default class ItemPost extends Component {
             </a>
             </figure>
           <div className="entry-content col-md-7 pl-md-0">                                    
-            <h5 className="entry-title mb-3"><a href="single.html">{post.title.rendered}-{post.id}</a></h5>
+            <h5 className="entry-title mb-3"><a href="single.html">{post.title.rendered}</a></h5>
             <div className="entry-meta align-items-center">
               <a href="author.html">Furukawa</a> in <a href="archive.html">Programing</a><br />                                    
               <span>March 14</span>

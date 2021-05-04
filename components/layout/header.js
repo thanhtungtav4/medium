@@ -1,5 +1,6 @@
 import React from "react";
 import Navpc from "../base/navpc";
+import API from "../../lib/api";
 import SwitchTheme from "../base/switchTheme";
 class Header extends React.Component {
   constructor(props) {
