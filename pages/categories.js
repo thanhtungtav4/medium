@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 import Head from "next/head";
 import Layout from "../components/layout/layout";
 import Popular from "../components/module/Popular";
 import FeaturedPost from "../components/module/categories/FeaturedPost";
 import ItemPost03 from "../components/base/ItemPost03";
 import ItemPost from "../components/module/categories/ItemPost";
-const Categories = () => (
+export default class Categories extends Component {  
+  render() {
+  return (
   <>
    <Head>
       <meta charSet="utf-8" />
@@ -58,7 +60,7 @@ const Categories = () => (
 </div>
 
   </Layout>
- 
-</>
-);
-export default Categories;
+  </>
+  );
+  }
+}

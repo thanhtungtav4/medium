@@ -22,7 +22,7 @@ class Header extends React.Component {
       <header id="header" className="d-lg-block d-none">
         <div className="container">
           <div className="align-items-center w-100">
-            <h1 className="logo float-start navbar-brand"><a href="index.html" className="logo">Mediumvn</a></h1>
+            <h1 className="logo float-start navbar-brand"><a href="/" className="logo">Mediumvn</a></h1>
             <div className="header-right float-end w-50">                    
               <div className="d-inline-flex float-end text-right align-items-center">                        
                 <ul className="social-network heading navbar-nav d-lg-flex align-items-center">                       
