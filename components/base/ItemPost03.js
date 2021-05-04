@@ -2,7 +2,6 @@ import React, { Component } from "react";
 export default class ItemPost03 extends Component {  
   render() {
   return (
-    <>
           <article className="row justify-content-between mb-5 mr-0">
             <div className="col-md-9 ">
               <div className="align-self-center">
@@ -23,8 +22,6 @@ export default class ItemPost03 extends Component {
             </div>
             <div className="col-md-3 bgcover" style={{backgroundImage: 'url(static/images/thumb/thumb-800x495.jpg)'}} />
           </article>
-        
-    </>
     );
   }
 }
