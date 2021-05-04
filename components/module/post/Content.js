@@ -17,26 +17,6 @@ export default class Content extends Component {
         <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly the manatee.</p>
         <hr className="section-divider" />
         <p>Thanks sniffed in hello after in foolhardy and some far purposefully much one at the much conjointly leapt skimpily that quail sheep some goodness nightingale the instead exited expedient up far ouch mellifluous altruistic and and lighted more instead much when ferret but the.</p>
-        {/*Begin Subcrible*/}
-        <div className="border p-5 bg-lightblue mb-5">
-          <div className="row justify-content-between">
-            <div className="col-md-5 mb-2 mb-md-0">
-              <h5 className="font-weight-bold secondfont mb-3 mt-0">Become a member</h5>
-              <p className="small-text">Get the latest news right in your inbox. We never spam!</p>
-            </div>
-            <div className="col-md-7">
-              <div className="row">
-                <div className="col-md-12">
-                  <input type="text" className="form-control" placeholder="Enter your e-mail address" />
-                </div>
-                <div className="col-md-12 mt-2">
-                  <button type="submit" className="btn btn-success btn-block">Subscribe</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*End Subcrible*/}
         <p>Yet more some certainly yet alas abandonedly whispered intriguingly well extensive one howled talkative admonishingly below a rethought overlaid dear gosh activated less however hawk yet oh scratched ostrich some outside crud irrespective lightheartedly and much far amenably that the elephant since when.</p>
       </LazyLoad>
     );
