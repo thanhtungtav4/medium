@@ -58,7 +58,6 @@ constructor(props){
         <ItemPost03/>
         <div className="row justify-content-between">
           <div className="divider-2" />
-            
             {elmItem}
         </div>
         <ItemPost03/>

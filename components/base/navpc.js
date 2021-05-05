@@ -1,13 +1,26 @@
 import React from "react";
 import Link from 'next/link';
+import API from "../../lib/api";
 
 class Navpc extends React.Component {
   listener = null;
-  state = {
-    nav:false
+  constructor(props){
+    super(props);
+    this.state = {
+      nav:false,
+      menus: [],
+    }
   }
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    API.get('/menu')
+    .then(res => {
+      this.setState({
+        menus: res.data
+      })
+    })
+    .catch(err =>console.log(err));
   }
   componentWillUnmount() {
      window.removeEventListener('scroll');
@@ -25,26 +38,15 @@ class Navpc extends React.Component {
 
   }
   render() {
+    var Menus = this.state.menus;
     return(
         <nav id="main-menu" className={this.state.nav ? 'stick d-lg-block d-none scroll-to-fixed-fixed' : 'stick d-lg-block d-none'}>
         <div className="container">
           <div className="menu-primary">
             <ul className="d-flex justify-content-between">
-              <li className="current-menu-item"><Link href="/">Home</Link></li>
-              <li className="menu-item-has-children"><a href="categories.html">Categories</a>
-                <ul className="sub-menu">
-                  <li><a href="categories.html">Politics</a></li>
-                  <li><a href="categories.html">Health</a></li>
-                  <li><a href="categories.html">Design</a></li>
-                </ul>
-              </li>
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="categories.html">Politics</a></li>
-              <li><a href="categories.html">Health</a></li>
-              <li><a href="categories.html">Design</a></li>
-              <li><a href="categories.html">Startups</a></li>
-              <li><a href="categories.html">Culture</a></li>                                
-              <li><a href="contact.html">Contact</a></li>
+            {Menus.map((item) => (
+              <li className="current-menu-item"><Link href="/">{item.title}</Link></li>
+              ))}
               <li className="menu-item-has-children"><a href="#">More...</a>
                 <ul className="sub-menu">
                   <li><a href="search.html">Search</a></li>
