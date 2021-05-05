@@ -45,7 +45,7 @@ class Navpc extends React.Component {
           <div className="menu-primary">
             <ul className="d-flex justify-content-between">
             {Menus.map((item) => (
-              <li className="current-menu-item"><Link href="/">{item.title}</Link></li>
+              <li className="current-menu-item"><Link href={item.url}>{item.title}</Link></li>
               ))}
               <li className="menu-item-has-children"><a href="#">More...</a>
                 <ul className="sub-menu">
