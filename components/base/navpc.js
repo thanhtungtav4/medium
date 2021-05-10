@@ -41,24 +41,24 @@ class Navpc extends React.Component {
     var Menus = this.state.menus;
     return(
         <nav id="main-menu" className={this.state.nav ? 'stick d-lg-block d-none scroll-to-fixed-fixed' : 'stick d-lg-block d-none'}>
-        <div className="container">
-          <div className="menu-primary">
-            <ul className="d-flex justify-content-between">
-            {Menus.map((item) => (
-              <li className="current-menu-item"><Link href={item.url}>{item.title}</Link></li>
-              ))}
-              <li className="menu-item-has-children"><a href="#">More...</a>
-                <ul className="sub-menu">
-                  <li><a href="search.html">Search</a></li>
-                  <li><a href="author.html">Author</a></li>
-                  <li><a href="404.html">404</a></li>                                
-                </ul>
-              </li>                            
-            </ul>
-            <span />
+          <div className="container">
+            <div className="menu-primary">
+              <ul className="d-flex justify-content-between">
+              {Menus.map((item) => (
+                <li className="current-menu-item" key={item.ID}><Link href={item.url}>{item.title}</Link></li>
+                ))}
+                <li className="menu-item-has-children"><a href="#">More...</a>
+                  <ul className="sub-menu">
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="author.html">Author</a></li>
+                    <li><a href="404.html">404</a></li>                                
+                  </ul>
+                </li>                            
+              </ul>
+              <span />
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
     )
   }

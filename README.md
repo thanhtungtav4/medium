@@ -1,34 +1,21 @@
-https://timber.io/blog/building-a-blog-with-next-js/
-https://github.com/postlight/headless-wp-starter
-https://github.com/nas5w/100-days-of-code-frontend#html
-https://github.com/leerob/leerob.io
-https://github.com/iamvishnusankar/next-sitemap
-https://medium.com/@andreasmcd/how-my-team-converted-our-website-from-jquery-to-react-in-small-steps-cd4390f0a146
-https://medium.com/@bretcameron/react-intro-for-developers-who-know-jquery-1e9dd65863a8
-https://www.freecodecamp.org/news/how-to-optimize-react-applications-with-lazy-loading-232183e02768/
-https://dev.to/abbeyperini/toggle-dark-mode-in-react-28c9
-https://dev.to/enochndika/dark-mode-with-tailwindcss-in-next-js-2if5
-https://medium.com/@shoaibhassan_/install-wordpress-with-postgresql-using-apache-in-5-min-a26078d496fb
+# Basic API routes example
 
-////////////////
-https://wp-and-react.com/#/
-tổng hợp post 
-///////////////
+Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`. This example shows how to create multiple `API` endpoints with serverless functions, which can execute independently.
 
+## Deploy your own
 
-///////////////
-https://frontity.org/
-Frontity - Khung React cho WordPress
-/////////////
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-//////////////
-https://glitch.com
-//////////////////
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes&project-name=api-routes&repository-name=api-routes)
 
-///
-https://codesandbox.io/s/r094p6ylkq?file=/src/index.js
-///// api
+## How to use
 
-https://github.com/developit/unfetch#responseheaders
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-https://www.digitalocean.com/community/tutorials/react-axios-react
+```bash
+npx create-next-app --example api-routes api-routes-app
+# or
+yarn create next-app --example api-routes api-routes-app
+```
+
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

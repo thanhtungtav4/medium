@@ -20,12 +20,10 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
- 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -154,4 +152,5 @@
 .dark .gg-sun::after {
   transform: rotate(45deg)
 }
+ 
  

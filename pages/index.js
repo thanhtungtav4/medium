@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Head from "next/head";
-import axios from 'axios';
 import Layout from "../components/layout/layout";
 import Trending from "../components/module/Trending";
 import Featured from "../components/module/Featured";
