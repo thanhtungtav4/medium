@@ -8,6 +8,7 @@ import ListPostHost from "../components/module/ListPostHost";
 import SidebarAds from "../components/module/SidebarAds";
 import Popular from "../components/module/Popular";
 import MostRecent from "../components/module/MostRecent";
+import API from "../lib/api";
 
 export default class Homepage extends Component {  
   render() {
