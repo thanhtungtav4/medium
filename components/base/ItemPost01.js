@@ -4,9 +4,7 @@ import Image from 'next/image';
 export default class ItemPost01 extends Component {  
   render() {
     var item = this.props.data;
-    console.log(item);
   return (
-    
     <LazyLoad>
       <article>
             <div className="mb-3 d-flex row">
@@ -18,7 +16,7 @@ export default class ItemPost01 extends Component {
               <div className="entry-content col-8 col-md-8 pl-md-0">                                                    
                 <h5 className="entry-title mb-3"><a href={item.slug}>{item.title.rendered}</a></h5>
                 <div className="entry-meta align-items-center">
-                  <a href="author.html">Alentica</a> in <a href="archive.html">Police</a><br />
+                  <a href="author.html">Alentica</a> in <a href={item.slug}>Police</a><br />
                   <span>Jun 16</span>
                   <span className="middotDivider" />
                   <span className="readingTime" title="3 min read">7 min read</span>
