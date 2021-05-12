@@ -1,11 +1,29 @@
 import React, { Component } from "react";
 import Image from 'next/image';
 import ItemPost01 from "../base/ItemPost01";
-export default class Featured extends Component {  
+import API from "../../lib/api";
+export default class Featured extends Component { 
+  constructor(props){
+    super(props);
+    this.state = {
+      Categories2: [],
+    }
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+    API.get('/posts?per_page=4')
+    .then(res => {
+      this.setState({
+        Categories2: res.data
+      })
+    })
+    .catch(err =>console.log(err));
+  }
   render() {
+    var CategoriesData = this.state.Categories2;
   return (
     <>
-            <div className="col-sm-12 col-md-9 col-xl-9">
+        <div className="col-sm-12 col-md-9 col-xl-9">
           <h2 className="spanborder h4">
             <span>Editor's Picks</span>
           </h2>
@@ -36,11 +54,12 @@ export default class Featured extends Component {
               <a className="btn btn-green d-inline-block mb-4 mb-md-0" href="archive.html">All Featured</a>
             </div>
             <div className="col-sm-12 col-md-6">
-                <ItemPost01/>
+                {CategoriesData.map((item, index) => (
+                     <ItemPost01 key={index} data={item} />
+                ))}
             </div>
           </div>                
-        </div>{/*end featured*/}                
-        {/*begin Trending*/}
+        </div>             
     </>
   );
 }
