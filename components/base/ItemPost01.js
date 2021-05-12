@@ -9,7 +9,7 @@ export default class ItemPost01 extends Component {
       <article>
             <div className="mb-3 d-flex row">
               <figure className="col-4 col-md-4">
-                <a href="single.html">
+                <a href={item.slug}>
                   <Image src={item.featured_image_url ? item.featured_image_url : 'https://picsum.photos/200/300'} layout="responsive" alt={item.title.rendered} width={700} height={512}/>
                 </a>
               </figure>

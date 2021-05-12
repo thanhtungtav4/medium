@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Image from 'next/image';
 export default class ItemPost02 extends Component {  
   render() {
+    var item = this.props.data;
   return (
     <>
             <article className="col-md-6">
