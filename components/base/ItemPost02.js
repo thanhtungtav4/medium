@@ -1,12 +1,12 @@
 import React, { Component } from "react";
+import LazyLoad from 'react-lazyload';
 import Image from 'next/image';
 export default class ItemPost02 extends Component {  
   render() {
     var item = this.props.data;
   return (
-    <>
             <article className="col-md-6">
-              <div className="mb-3 d-flex row">
+              <LazyLoad className="mb-3 d-flex row">
                 <figure className="col-md-5"><a href="single.html">
                   <Image src="/static/images/thumb/thumb-512x512.jpg" layout="responsive"  alt="true" width={700} height={512}/>
                   </a></figure>
@@ -24,9 +24,8 @@ export default class ItemPost02 extends Component {
                     <span className="readingTime" title="3 min read">4 min read</span>
                   </div>
                 </div>
-              </div>
+              </LazyLoad>
             </article>
-    </>
     );
   }
 }

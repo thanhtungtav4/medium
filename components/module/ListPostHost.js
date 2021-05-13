@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ItemPost02 from "../base/ItemPost02";
+import LazyLoad from 'react-lazyload';
 import API from "../../lib/api";
 export default class ListPostHost extends Component {  
   constructor(props){
@@ -21,13 +22,13 @@ export default class ListPostHost extends Component {
     var PostHostData = this.state.Posthost;
   return (
     <>
-    <div className="col-md-10">
+    <LazyLoad className="col-md-10">
       <div className="row justify-content-between">
       {PostHostData.map((item, index) => (
         <ItemPost02 key={index} data={item} />
         ))}
       </div>
-    </div>
+    </LazyLoad>
     </>
     );
   }
