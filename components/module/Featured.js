@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Image from 'next/image';
 import ItemPost01 from "../base/ItemPost01";
+import LazyLoad from 'react-lazyload';
 import API from "../../lib/api";
 export default class Featured extends Component { 
   constructor(props){
@@ -53,11 +54,11 @@ export default class Featured extends Component {
               </article>
               <a className="btn btn-green d-inline-block mb-4 mb-md-0" href="archive.html">All Featured</a>
             </div>
-            <div className="col-sm-12 col-md-6">
+            <LazyLoad className="col-sm-12 col-md-6">
                 {CategoriesData.map((item, index) => (
                      <ItemPost01 key={index} data={item} />
                 ))}
-            </div>
+            </LazyLoad>
           </div>                
         </div>             
     </>

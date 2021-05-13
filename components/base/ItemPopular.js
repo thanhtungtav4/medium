@@ -8,7 +8,7 @@ export default class ItemPopular extends Component {
   return (
     <LazyLoad>
       <li className="d-flex">
-          <div className="post-count">{'0'+ isNum}</div>
+          <div className="post-count">{'0' + isNum}</div>
           <div className="post-content">
             <h5 className="entry-title mb-3"><a href="single.html">President and the emails. Who will guard the guards?</a></h5>
             <div className="entry-meta align-items-center">

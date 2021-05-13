@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link';
+import LazyLoad from 'react-lazyload';
 import API from "../../lib/api";
 
 class Navpc extends React.Component {
@@ -42,10 +43,10 @@ class Navpc extends React.Component {
     return(
         <nav id="main-menu" className={this.state.nav ? 'stick d-lg-block d-none scroll-to-fixed-fixed' : 'stick d-lg-block d-none'}>
           <div className="container">
-            <div className="menu-primary">
+            <LazyLoad className="menu-primary">
               <ul className="d-flex justify-content-between">
               {Menus.map((item) => (
-                <li className="current-menu-item" key={item.ID}><Link href={item.url}>{item.title}</Link></li>
+                <li className="current-menu-item" key={item?.ID}><Link href={item?.url}>{item?.title}</Link></li>
                 ))}
                 <li className="menu-item-has-children"><a href="#">More...</a>
                   <ul className="sub-menu">
@@ -56,7 +57,7 @@ class Navpc extends React.Component {
                 </li>                            
               </ul>
               <span />
-            </div>
+            </LazyLoad>
           </div>
         </nav>
 
