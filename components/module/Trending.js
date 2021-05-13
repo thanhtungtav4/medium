@@ -6,6 +6,7 @@ export default class Trending extends Component {
     super(props);
     this.state = {
       PostTrending: [],
+      Postcount: [],
     }
   } 
   componentDidMount() {
@@ -28,7 +29,7 @@ export default class Trending extends Component {
             </h4>
             <ol>
             {DataTrending.map((PostTrending, index) => (
-              <ItemPopular key={index} data={PostTrending} />
+              <ItemPopular key={index} data={PostTrending} Postcount={index} />
             ))}
             </ol>
           </div>

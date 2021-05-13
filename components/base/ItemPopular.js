@@ -3,10 +3,12 @@ import LazyLoad from 'react-lazyload';
 export default class ItemPopular extends Component {  
   render() {
     var ItemPostTrending = this.props.data;
+    var isNum = parseInt(this.props.Postcount) + 1;
+    console.log(isNum);
   return (
     <LazyLoad>
       <li className="d-flex">
-          <div className="post-count">01</div>
+          <div className="post-count">{'0'+ isNum}</div>
           <div className="post-content">
             <h5 className="entry-title mb-3"><a href="single.html">President and the emails. Who will guard the guards?</a></h5>
             <div className="entry-meta align-items-center">
