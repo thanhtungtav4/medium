@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import ItemPopular from "../base/ItemPopular";
+import dynamic from "next/dynamic";
 import API from "../../lib/api";
+
+const ItemPopular = dynamic(() => import("../base/ItemPopular"));
+
 export default class Trending extends Component { 
   constructor(props){
     super(props);

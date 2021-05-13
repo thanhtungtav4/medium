@@ -4,15 +4,14 @@ export default class ItemPopular extends Component {
   render() {
     var ItemPostTrending = this.props.data;
     var isNum = parseInt(this.props.Postcount) + 1;
-    console.log(isNum);
   return (
     <LazyLoad>
       <li className="d-flex">
-          <div className="post-count">{'0' + isNum}</div>
+          <div className="post-count"> {isNum ? '0' + isNum : '01'}</div>
           <div className="post-content">
-            <h5 className="entry-title mb-3"><a href="single.html">President and the emails. Who will guard the guards?</a></h5>
+            <h5 className="entry-title mb-3"><a href={ItemPostTrending?.slug}>{ItemPostTrending?.title?.rendered}</a></h5>
             <div className="entry-meta align-items-center">
-              <a href="author.html">Alentica</a> in <a href="archive.html">Police</a><br />                                    
+              <a href={ItemPostTrending?.slug}>Alentica</a> in <a href={ItemPostTrending?.slug}>Police</a><br />                                    
               <span>May 14</span>
               <span className="middotDivider" />
               <span className="readingTime" title="3 min read">3 min read</span>

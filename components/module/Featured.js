@@ -29,7 +29,7 @@ export default class Featured extends Component {
             <span>Editor's Picks</span>
           </h2>
           <div className="row">
-            <div className="col-sm-12 col-md-6">
+            <LazyLoad className="col-sm-12 col-md-6">
               <article className="first mb-3">
                 <figure><a href="single.html">
                   <Image src="/static/images/thumb/thumb-1240x700.jpg" layout="responsive"  alt="true" width={405} height={277}/>
@@ -53,7 +53,7 @@ export default class Featured extends Component {
                 </div>
               </article>
               <a className="btn btn-green d-inline-block mb-4 mb-md-0" href="archive.html">All Featured</a>
-            </div>
+            </LazyLoad>
             <LazyLoad className="col-sm-12 col-md-6">
                 {CategoriesData.map((item, index) => (
                      <ItemPost01 key={index} data={item} />
