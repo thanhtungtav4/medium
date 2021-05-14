@@ -13,10 +13,12 @@ export default class ItemPost02 extends Component {
                 </a>
                   </figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
-                  <h5 className="entry-title mb-3"><a href="single.html">{item?.title?.rendered}</a></h5>
+                  <h5 className="entry-title mb-3"><a href={item?.slug}>{item?.title?.rendered}</a></h5>
                   <div className="entry-excerpt">
-                    <p dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered }}>
-                    </p>
+                  <div
+                      dangerouslySetInnerHTML={{
+                        __html: item?.excerpt?.rendered
+                      }}></div>
                   </div>
                   <div className="entry-meta align-items-center">
                     <a href="author.html">Anna Goldfarb</a> in <a href="archive.html">Fashion</a><br />                                    
