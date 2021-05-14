@@ -2,6 +2,7 @@ import React from "react";
 import Link from 'next/link';
 import LazyLoad from 'react-lazyload';
 import API from "../../lib/api";
+import PlaceholderMenu from "../../components/placeholder/menu";
 
 class Navpc extends React.Component {
   listener = null;
@@ -10,6 +11,7 @@ class Navpc extends React.Component {
     this.state = {
       nav:false,
       menus: [],
+      loading: true,
     }
   }
 
@@ -18,7 +20,8 @@ class Navpc extends React.Component {
     API.get('/menu')
     .then(res => {
       this.setState({
-        menus: res.data
+        menus: res.data,
+        loading: false
       })
     })
     .catch(err =>console.log(err));
@@ -45,9 +48,23 @@ class Navpc extends React.Component {
           <div className="container">
             <LazyLoad className="menu-primary">
               <ul className="d-flex justify-content-between">
-              {Menus.map((item) => (
-                <li className="current-menu-item" key={item?.ID}><Link href={item?.url}>{item?.title}</Link></li>
-                ))}
+              {this.state.loading ? (
+                <>
+                <PlaceholderMenu />
+                <PlaceholderMenu />
+                <PlaceholderMenu />
+                <PlaceholderMenu />
+                <PlaceholderMenu />
+                <PlaceholderMenu />
+                </>
+                ) : (
+                  <>
+                  {Menus.map((item) => (
+                    <li className="current-menu-item" key={item?.ID}><Link href={item?.url}>{item?.title}</Link></li>
+                    ))}
+                    </>
+                )}
+
                 <li className="menu-item-has-children"><a href="#">More...</a>
                   <ul className="sub-menu">
                     <li><a href="search.html">Search</a></li>
