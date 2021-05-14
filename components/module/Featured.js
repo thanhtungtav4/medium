@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Image from 'next/image';
 import ItemPost01 from "../base/ItemPost01";
 import PlaceholderItem from "../../components/placeholder/ItemPost01";
 import PlaceholderMain from "../../components/placeholder/mainpost";
-import API from "../../lib/api";
 import MainPost from "../base/mainPost";
+import API from "../../lib/api";
+
 
 export default class Featured extends Component { 
   constructor(props){

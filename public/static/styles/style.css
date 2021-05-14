@@ -206,7 +206,14 @@ h5.entry-title {
 	font-size: 0.9em;
 	letter-spacing: 0.5px
 }
-
+.entry-excerpt p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	height: 45px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
 b,
 strong {
 	font-weight: 700;
