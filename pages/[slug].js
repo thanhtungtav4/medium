@@ -5,8 +5,29 @@ import LazyLoad from "react-lazyload";
 import Layout from "../components/layout/layout";
 import Share from "../components/module/post/Share";
 import Content from "../components/module/post/Content";
+import API from "../lib/api";
+
 export default class PostDetail extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      PostDetail: [],
+      loading: true,
+    }
+  }
+  componentDidMount() {
+    API.get('/posts/12')
+    .then(res => {
+      this.setState({
+        PostDetail: res.data,
+        loading: false
+      })
+    })
+    .catch(err =>console.log(err));
+  }
   render() {
+    var PostData = this.state.PostDetail;
+    console.log(PostData);
     return (
       <>
         <Head>
@@ -35,17 +56,16 @@ export default class PostDetail extends Component {
             <div className="entry-header">
               <div className="mb-5">
                 <h1 className="entry-title m_b_2rem">
-                  In 21st-century Korea, shamanism is not only thriving — but
-                  evolving
+                {PostData?.title?.rendered}
                 </h1>
                 <div className="entry-meta align-items-center">
                   <a className="author-avatar" href="#">
                     <img src="/static/images/author-avata-2.jpg" alt="true" />
                   </a>
-                  <a href="author.html">Darcy Reeder</a> in{" "}
-                  <a href="archive.html">OneZero</a>
+                  <a href="#">Darcy Reeder</a> in{" "}
+                  <a href="#">OneZero</a>
                   <br />
-                  <span>Jun 17</span>
+                  <span>{PostData?.date}</span>
                   <span className="middotDivider" />
                   <span className="readingTime" title="3 min read">
                     3 min read
@@ -54,15 +74,7 @@ export default class PostDetail extends Component {
               </div>
             </div>
             <figure className="image zoom mb-5">
-              <LazyLoad>
-                <Image
-                  src="/static/images/thumb/thumb-1240x700.jpg"
-                  layout="responsive"
-                  alt="true"
-                  width={1111}
-                  height={626}
-                />
-              </LazyLoad>
+            <Image src={PostData?.featured_image_url ? PostData?.featured_image_url : 'https://picsum.photos/200/300'} layout="responsive" alt={item?.title?.rendered} width={1111} height={626}/>
             </figure>
             <article className="entry-wraper mb-5">
               <Share></Share>
