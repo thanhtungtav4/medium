@@ -74,7 +74,7 @@ export default class PostDetail extends Component {
               </div>
             </div>
             <figure className="image zoom mb-5">
-            <Image src={PostData?.featured_image_url ? PostData?.featured_image_url : 'https://picsum.photos/200/300'} layout="responsive" alt={item?.title?.rendered} width={1111} height={626}/>
+            <Image src={PostData?.featured_image_url ? PostData?.featured_image_url : 'https://picsum.photos/200/300'} layout="responsive" alt={PostData?.title?.rendered} width={1111} height={626}/>
             </figure>
             <article className="entry-wraper mb-5">
               <Share></Share>
