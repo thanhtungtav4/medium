@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import Image from 'next/image';
 import ItemPost01 from "../base/ItemPost01";
-import LazyLoad from 'react-lazyload';
+import PlaceholderItem from "../../components/placeholder/ItemPost01";
 import API from "../../lib/api";
+
 export default class Featured extends Component { 
   constructor(props){
     super(props);
     this.state = {
       Categories2: [],
+      loading: true,
     }
   }
   componentDidMount() {
@@ -15,7 +17,8 @@ export default class Featured extends Component {
     API.get('/posts?per_page=4')
     .then(res => {
       this.setState({
-        Categories2: res.data
+        Categories2: res.data,
+        loading: false
       })
     })
     .catch(err =>console.log(err));
@@ -29,7 +32,7 @@ export default class Featured extends Component {
             <span>Editor's Picks</span>
           </h2>
           <div className="row">
-            <LazyLoad className="col-sm-12 col-md-6">
+            <div className="col-sm-12 col-md-6">
               <article className="first mb-3">
                 <figure><a href="single.html">
                   <Image src="/static/images/thumb/thumb-1240x700.jpg" layout="responsive"  alt="true" width={405} height={277}/>
@@ -53,12 +56,23 @@ export default class Featured extends Component {
                 </div>
               </article>
               <a className="btn btn-green d-inline-block mb-4 mb-md-0" href="archive.html">All Featured</a>
-            </LazyLoad>
-            <LazyLoad className="col-sm-12 col-md-6">
-                {CategoriesData.map((item, index) => (
-                     <ItemPost01 key={index} data={item} />
-                ))}
-            </LazyLoad>
+            </div>
+            <div className="col-sm-12 col-md-6">
+            {this.state.loading ? (
+                  <>
+                    <PlaceholderItem />
+                    <PlaceholderItem />
+                    <PlaceholderItem />
+                    <PlaceholderItem />
+                  </>
+                ) : (
+                  <>
+                  {CategoriesData.map((item, index) => (
+                      <ItemPost01 key={index} data={item} />
+                  ))}
+                </>
+                )}
+            </div>
           </div>                
         </div>             
     </>

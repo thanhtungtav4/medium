@@ -11,8 +11,10 @@
     "axios": "^0.21.1",
     "next": "^10.2.0",
     "next-themes": "^0.0.14",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.14.0",
+    "react-content-loader": "^6.0.3",
+    "react-dom": "^16.14.0",
+    "react-fade-in": "^2.0.1",
     "react-lazyload": "^3.2.0",
     "react-router": "^5.2.0",
     "react-sticky-box": "^0.9.3"

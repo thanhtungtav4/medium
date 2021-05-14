@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import LazyLoad from 'react-lazyload';
+
 export default class ItemPopular extends Component {  
   render() {
     var ItemPostTrending = this.props.data;
