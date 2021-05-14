@@ -8,3 +8,6 @@ https://medium.com/front-end-weekly/react-user-experience-tactics-placeholder-lo
 https://api-fast.ml/wp-json/wp/v2/posts/?categories/?slug=ngon-tinh
 
 https://webdevstudios.com/2019/01/03/headless-wordpress-with-react-and-nextjs-1/
+
+
+https://thachpham.com/wordpress/wordpress-tutorials/lam-trang-doc-truyen.html
