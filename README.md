@@ -24,3 +24,8 @@ https://skeletonreact.com/
 //deloy online 
 https://surge.sh/
 //deloy online 
+
+
+// truncate
+https://github.com/pablosichert/react-truncate
+// truncate
