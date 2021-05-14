@@ -5,7 +5,6 @@ import NavMobile from "../base/navmobile";
 import Header from "./header";
 import ScrollToTop from "../base/ScrollToTop";
 import ScrollBar from "../base/Topscrollbar";
-// const Footer = dynamic(() => import("./footer"));
 const Footer = dynamic(
   () => import('./footer'),
   {

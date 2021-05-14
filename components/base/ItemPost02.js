@@ -7,14 +7,16 @@ export default class ItemPost02 extends Component {
   return (
             <article className="col-md-6">
               <LazyLoad className="mb-3 d-flex row">
-                <figure className="col-md-5"><a href="single.html">
-                  <Image src="/static/images/thumb/thumb-512x512.jpg" layout="responsive"  alt="true" width={700} height={512}/>
-                  </a></figure>
+                <figure className="col-md-5">
+                <a href={item?.slug}>
+                  <Image src={item?.featured_image_url ? item?.featured_image_url : 'https://picsum.photos/200/300'} layout="responsive" alt={item?.title?.rendered} width={700} height={512}/>
+                </a>
+                  </figure>
                 <div className="entry-content col-md-7 pl-md-0">                                    
-                  <h5 className="entry-title mb-3"><a href="single.html">I Learned How to Die Before I Knew How to Live</a></h5>
+                  <h5 className="entry-title mb-3"><a href="single.html">{item?.title?.rendered}</a></h5>
                   <div className="entry-excerpt">
                     <p>
-                      Tech companies need more than advisory boards if they want. 
+                      {item?.excerpt?.rendered}
                     </p>
                   </div>
                   <div className="entry-meta align-items-center">
