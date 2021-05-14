@@ -15,8 +15,7 @@ export default class ItemPost02 extends Component {
                 <div className="entry-content col-md-7 pl-md-0">                                    
                   <h5 className="entry-title mb-3"><a href="single.html">{item?.title?.rendered}</a></h5>
                   <div className="entry-excerpt">
-                    <p>
-                      {item?.excerpt?.rendered}
+                    <p dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered }}>
                     </p>
                   </div>
                   <div className="entry-meta align-items-center">

@@ -18,3 +18,9 @@ https://github.com/deeayeen/medium-placeholder
 https://medium.com/front-end-weekly/react-user-experience-tactics-placeholder-loading-content-fb734da0f9ae
 https://skeletonreact.com/
 //placeholder is pending load api
+
+
+
+//deloy online 
+https://surge.sh/
+//deloy online 
