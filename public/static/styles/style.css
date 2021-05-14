@@ -146,6 +146,7 @@ html,
 body {
 	height: 100%;
 	background-color: var(--dark-background);
+	font-display: swap;
 }
 
 .top-scroll-bar {
