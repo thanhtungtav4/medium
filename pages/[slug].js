@@ -12,12 +12,25 @@ export default class PostDetail extends Component {
     super(props);
     this.state = {
       PostDetail: [],
+      PostCate: [],
+      ApiString: '/posts/?slug=',
       loading: true,
     }
   }
   componentDidMount() {
+    this.getData();
+  }
+  getDatabyCategory(){
+    const { ApiString } = this.state;
+    this.setState(
+      {
+        ApiString: '/categories/?slug=',
+      }
+    )
+  }
+  getData(){
     var getSlug = window.location.pathname.slice(1);
-    API.get('/posts/?slug=' + getSlug)
+    API.get(this.state.ApiString + getSlug)
     .then(res => {
       this.setState({
         PostDetail: res.data,
@@ -60,23 +73,23 @@ export default class PostDetail extends Component {
                 {PostData?.title?.rendered}
                 </h1>
                 <div className="entry-meta align-items-center">
-                  <a className="author-avatar" href="#">
+                  {/* <a className="author-avatar" href="#">
                     <img src="/static/images/author-avata-2.jpg" alt="true" />
                   </a>
                   <a href="#">Darcy Reeder</a> in{" "}
                   <a href="#">OneZero</a>
-                  <br />
+                  <br /> */}
                   <span>{PostData?.date}</span>
                   <span className="middotDivider" />
-                  <span className="readingTime" title="3 min read">
+                  {/* <span className="readingTime" title="3 min read">
                     3 min read
-                  </span>
+                  </span> */}
                 </div>
               </div>
-            </div>
-            <figure className="image zoom mb-5">
+              <figure className="image zoom mb-5">
             <Image src={PostData?.featured_image_url ? PostData?.featured_image_url : 'https://picsum.photos/200/300'} layout="responsive" alt={PostData?.title?.rendered} width={1111} height={626}/>
             </figure>
+            </div>
             <article className="entry-wraper mb-5">
               <Share></Share>
               <Content></Content>
