@@ -64,7 +64,7 @@ export default class PostDetail extends Component {
     .catch(err =>console.log(err));
   }
   render() {
-    var PostData = this.state.DataAPi[0];
+    var PostData = this.state.DataAPi;
     return (
       <>
         <Head>
