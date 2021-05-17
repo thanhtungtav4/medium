@@ -17,6 +17,7 @@
     "react-fade-in": "^2.0.1",
     "react-lazyload": "^3.2.0",
     "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-sticky-box": "^0.9.3"
   },
   "license": "MIT"

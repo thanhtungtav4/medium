@@ -29,3 +29,7 @@ https://surge.sh/
 // truncate
 https://github.com/pablosichert/react-truncate
 // truncate
+
+//woocommerce
+https://www.tychesoftwares.com/hide-woocommerce-categories-shop/
+https://wordpress.org/support/topic/how-to-hide-categories-on-single-shop-page/

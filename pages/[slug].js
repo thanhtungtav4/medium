@@ -16,7 +16,8 @@ export default class PostDetail extends Component {
     }
   }
   componentDidMount() {
-    API.get('/posts/12')
+    var getSlug = window.location.pathname.slice(1);
+    API.get('/posts/?slug=' + getSlug)
     .then(res => {
       this.setState({
         PostDetail: res.data,
@@ -26,7 +27,7 @@ export default class PostDetail extends Component {
     .catch(err =>console.log(err));
   }
   render() {
-    var PostData = this.state.PostDetail;
+    var PostData = this.state.PostDetail[0];
     console.log(PostData);
     return (
       <>
