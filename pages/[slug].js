@@ -16,7 +16,7 @@ export default class PostDetail extends Component {
       ApiString: '/posts/?slug=',
       Slug: window.location.pathname.slice(1),
       loading: true,
-      Type:[],
+      Type: [],
     }
   }
   componentDidMount() {
@@ -27,6 +27,7 @@ export default class PostDetail extends Component {
     this.setState(
       {
         ApiString: '/categories/?slug=',
+        Type: 'Categores',
       }
     )
   }
@@ -43,7 +44,7 @@ export default class PostDetail extends Component {
     .then(res =>{
       this.setState({
         DataAPi: res.data,
-        loading: false
+        loading: false,
       })
       console.log(this.state.DataAPi);
     })
@@ -51,20 +52,18 @@ export default class PostDetail extends Component {
   getData(){
     API.get(this.state.ApiString + this.state.Slug)
     .then(res => {
+      this.fetchAPi();
       if(res.data == ""){
         this.getDatabyCategores();
         this.fetchAPi();
       }
-      this.setState({
-        DataAPi: res.data,
-        loading: false
-      })
       console.log(this.state.DataAPi);
     })
     .catch(err =>console.log(err));
   }
   render() {
     var PostData = this.state.DataAPi;
+    console.log(this.state.Type)
     return (
       <>
         <Head>
