@@ -28,7 +28,7 @@ class NavMobile extends React.Component {
   <LazyLoad className="sticky-header fixed d-lg-none d-md-block">
     <div className="text-right">
       <div className="container mobile-menu-fixed pr-5"> 
-        <h1 className="logo-small navbar-brand"><a href="index.html" className="logo">Merinda</a></h1>
+        <h1 className="logo-small navbar-brand"><a href="index.html" className="logo">FreeBoook</a></h1>
         <a className="author-avatar" href="#">
           <Image src="/static/images/author-avata-1.jpg" width={32}
       height={32} alt="true"/>
@@ -43,7 +43,7 @@ class NavMobile extends React.Component {
     </div>         
     <div className={this.state.is_open ? 'mobi-menu act' : 'mobi-menu'}>
       <div className="mobi-menu__logo">
-        <h1 className="logo navbar-brand"><a href="index.html" className="logo">Merinda</a></h1>
+        <h1 className="logo navbar-brand"><a href="index.html" className="logo">FreeBoook</a></h1>
       </div>
       <form action="#" method="get" className="menu-search-form d-lg-flex">                        
         <input type="text" className="search_field" placeholder="Search..."  name="s" />                    

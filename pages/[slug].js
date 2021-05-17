@@ -20,7 +20,7 @@ export default class PostDetail extends Component {
   componentDidMount() {
     this.getData();
   }
-  getDatabyCategory(){
+  getDatabyCategores(){
     const { ApiString } = this.state;
     this.setState(
       {
@@ -28,10 +28,29 @@ export default class PostDetail extends Component {
       }
     )
   }
+  getDatabyPages(){
+    const { ApiString } = this.state;
+    this.setState(
+      {
+        ApiString: '/pages/?slug=',
+      }
+    )
+  }
   getData(){
     var getSlug = window.location.pathname.slice(1);
     API.get(this.state.ApiString + getSlug)
     .then(res => {
+      if(res.data == ""){
+        this.getDatabyCategores();
+        API.get(this.state.ApiString + getSlug)
+        .then(res =>{
+          this.setState({
+            PostCate: res.data,
+            loading: false
+          })
+          console.log(this.state.PostCate[0]);
+        })
+      }
       this.setState({
         PostDetail: res.data,
         loading: false
@@ -41,7 +60,6 @@ export default class PostDetail extends Component {
   }
   render() {
     var PostData = this.state.PostDetail[0];
-    console.log(PostData);
     return (
       <>
         <Head>
