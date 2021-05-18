@@ -11,7 +11,7 @@ export default class PostDetail extends Component {
   constructor(props){
     super(props);
     this.state = {
-      PostDetail: [],
+      PostDetail: '',
       PostCate: [],
       ApiString: '/posts/?slug=',
       Slug: window.location.pathname.slice(1),
@@ -46,7 +46,7 @@ export default class PostDetail extends Component {
         DataAPi: res.data,
         loading: false,
       })
-      console.log(this.state.DataAPi);
+      //console.log(this.state.DataAPi);
     })
   }
   getData(){
@@ -57,13 +57,14 @@ export default class PostDetail extends Component {
         this.getDatabyCategores();
         this.fetchAPi();
       }
-      console.log(this.state.DataAPi);
+      //console.log(this.state.DataAPi);
     })
     .catch(err =>console.log(err));
   }
   render() {
     var PostData = this.state.DataAPi;
-    console.log(this.state.Type)
+    // var CateData = this.state.DataAPi[0];
+    console.log(PostData)
     return (
       <>
         <Head>
