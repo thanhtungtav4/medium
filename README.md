@@ -43,4 +43,23 @@ https://github.com/imranhsayed/woo-next
 https://www.codegrepper.com/code-examples/javascript/using+axios+to+fetch+multiple+urls
 https://www.pluralsight.com/guides/all-need-to-know-about-axios
 https://github.com/axios/axios/issues/371
+https://stackoverflow.com/questions/47343225/making-2-sequential-requests-with-axios-second-request-depends-on-the-response
+
+
+function getUserAccount() {
+  return axios.get('/user/12345');
+}
+
+function getUserPermissions() {
+  return axios.get('/user/12345/permissions');
+}
+
+axios.all([getUserAccount(), getUserPermissions()])
+  .then(axios.spread(function (acct, perms) {
+    // Both requests are now complete
+  }));
+
+
+
+ https://stackoverflow.com/questions/44182951/axios-chaining-multiple-api-requests 
 //
