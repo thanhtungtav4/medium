@@ -41,3 +41,6 @@ https://github.com/imranhsayed/woo-next
 
 //using axios to fetch multiple urls
 https://www.codegrepper.com/code-examples/javascript/using+axios+to+fetch+multiple+urls
+
+https://github.com/axios/axios/issues/371
+//
