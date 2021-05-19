@@ -37,3 +37,7 @@ https://wordpress.org/support/topic/how-to-hide-categories-on-single-shop-page/
 ///https://github.com/ronit-mukherjee/ilive4coding-nextjs-ecommerce
 
 https://github.com/imranhsayed/woo-next
+
+
+//using axios to fetch multiple urls
+https://www.codegrepper.com/code-examples/javascript/using+axios+to+fetch+multiple+urls

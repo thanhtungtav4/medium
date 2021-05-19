@@ -11,60 +11,31 @@ export default class PostDetail extends Component {
   constructor(props){
     super(props);
     this.state = {
-      PostDetail: '',
+      PostDetail: [],
       PostCate: [],
+      PageDetail: [],
+      Type: [],
       ApiString: '/posts/?slug=',
       Slug: window.location.pathname.slice(1),
       loading: true,
-      Type: [],
+      
     }
   }
   componentDidMount() {
-    this.getData();
-  }
-  getDatabyCategores(){
-    const { ApiString } = this.state;
-    this.setState(
-      {
-        ApiString: '/categories/?slug=',
-        Type: 'Categores',
-      }
-    )
-  }
-  getDatabyPages(){
-    const { ApiString } = this.state;
-    this.setState(
-      {
-        ApiString: '/pages/?slug=',
-      }
-    )
-  }
-  fetchAPi(){
-    API.get(this.state.ApiString + this.state.Slug)
-    .then(res =>{
-      this.setState({
-        DataAPi: res.data,
-        loading: false,
-      })
-      //console.log(this.state.DataAPi);
-    })
-  }
-  getData(){
-    API.get(this.state.ApiString + this.state.Slug)
+    API.get('/posts/?slug=' + this.state.Slug)
     .then(res => {
-      this.fetchAPi();
-      if(res.data == ""){
-        this.getDatabyCategores();
-        this.fetchAPi();
+      if(res.data != ""){
+        this.setState({
+          PostDetail: res.data,
+          loading: false,
+          Type: 'Post'
+        })
       }
-      //console.log(this.state.DataAPi);
     })
     .catch(err =>console.log(err));
   }
   render() {
-    var PostData = this.state.DataAPi;
-    // var CateData = this.state.DataAPi[0];
-    console.log(PostData)
+    var PostData = this.state.PostDetail;
     return (
       <>
         <Head>
@@ -96,17 +67,8 @@ export default class PostDetail extends Component {
                 {PostData?.title?.rendered}
                 </h1>
                 <div className="entry-meta align-items-center">
-                  {/* <a className="author-avatar" href="#">
-                    <img src="/static/images/author-avata-2.jpg" alt="true" />
-                  </a>
-                  <a href="#">Darcy Reeder</a> in{" "}
-                  <a href="#">OneZero</a>
-                  <br /> */}
                   <span>{PostData?.date}</span>
                   <span className="middotDivider" />
-                  {/* <span className="readingTime" title="3 min read">
-                    3 min read
-                  </span> */}
                 </div>
               </div>
               <figure className="image zoom mb-5">
@@ -283,9 +245,7 @@ export default class PostDetail extends Component {
                 </article>
               </div>
             </div>
-            {/*End post related*/}
-          </div>{" "}
-          {/*container*/}
+          </div>
         </Layout>
       </>
     );
