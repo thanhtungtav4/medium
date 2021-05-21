@@ -60,7 +60,7 @@ class Navpc extends React.Component {
                 ) : (
                   <>
                   {Menus.map((item) => (
-                    <li className="current-menu-item" key={item?.ID}><Link href={item?.url}>{item?.title}</Link></li>
+                    <li className="current-menu-item" key={item?.ID}><Link href={item?.post_name}>{item?.title}</Link></li>
                     ))}
                     </>
                 )}
