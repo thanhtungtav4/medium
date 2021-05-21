@@ -6,8 +6,9 @@ export default class Content extends Component {
   render() {
     var PostData = this.props.data;
   return (
-<div className="container">
-            <div className="entry-header">
+      <div className="container">
+            <article className="entry-wraper mb-5">
+              <Share></Share>
               <div className="mb-5">
                 <h1 className="entry-title m_b_2rem">
                   {PostData?.title?.rendered}
@@ -20,9 +21,6 @@ export default class Content extends Component {
               <figure className="image zoom mb-5">
                 <Image src={PostData?.featured_image_url ? PostData?.featured_image_url : 'https://picsum.photos/200/300'} layout="responsive" alt={PostData?.title?.rendered} width={1111} height={626}/>
             </figure>
-            </div>
-            <article className="entry-wraper mb-5">
-              <Share></Share>
               <div className="entry-main-content dropcap"
               dangerouslySetInnerHTML={{
                 __html: PostData?.content?.rendered

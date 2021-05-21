@@ -4,6 +4,7 @@ import axios from 'axios';
 import API from "../lib/api";
 import Layout from "../components/layout/layout";
 import Content from "../components/module/post/Content";
+import ContentCate from "../components/module/post/ContentCate";
 
 export default class PostDetail extends Component {
   constructor(props){
@@ -40,9 +41,9 @@ export default class PostDetail extends Component {
     }
   }
   render() {
-    var PostData = this.state.PostDetail[0];
-    var PageData = this.state.PagesDetail[0];
-    var CategoriesData = this.state.CategoriesDetail[0];
+      var PostData = this.state.PostDetail[0];
+      var PageData = this.state.PagesDetail[0];
+      var CategoriesData = this.state.CategoriesDetail[0];
     return (
       <>
         <Head>
@@ -51,7 +52,21 @@ export default class PostDetail extends Component {
           <title>Detail post</title>
         </Head>
         <Layout>
-          <Content  data={PostData} />
+        {this.state.loading ? (
+                <h2>Is loading</h2>
+                 ) : (
+                  <>
+                   {this.state.PostDetail[0] &&
+                    <Content  data={PostData} />
+                    }
+                    {this.state.CategoriesDetail[0] &&
+                    <ContentCate  data={CategoriesData} />
+                    }
+                    {this.state.PagesDetail[0] &&
+                    <Content  data={PageData} />
+                    }
+                  </>
+        )}
         </Layout>
       </>
     );
