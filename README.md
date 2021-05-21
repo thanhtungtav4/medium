@@ -63,3 +63,7 @@ axios.all([getUserAccount(), getUserPermissions()])
 
  https://stackoverflow.com/questions/44182951/axios-chaining-multiple-api-requests 
 //
+
+// get  related posts API in WordPress?
+https://api-fast.ml/wp-json/wp/v2/posts/related/227
+//

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Head from "next/head";
 import LazyLoad from 'react-lazyload';
 import Image from "next/image";
 import Popular from "../../module/Popular";
@@ -7,14 +8,20 @@ import ItemPost03 from "../../base/ItemPost03";
 import ItemPost from "../categories/ItemPost";
 export default class ContentCate extends Component {  
   render() {
+    var CategoriesData = this.props.data;
   return (
       <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{CategoriesData?.name}</title>
+      </Head>
       <div className="content-widget">
         <div className="container">
       <div className="row">
         <div className="col-md-8">
           <h4 className="spanborder">
-            <span>Culture</span>
+            <span>{CategoriesData?.name}</span>
           </h4>
           <FeaturedPost/>
           <ItemPost03/>

@@ -46,24 +46,19 @@ export default class PostDetail extends Component {
       var CategoriesData = this.state.CategoriesDetail[0];
     return (
       <>
-        <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Detail post</title>
-        </Head>
         <Layout>
         {this.state.loading ? (
-                <h2>Is loading</h2>
+                <h2>Is loading content</h2>
                  ) : (
                   <>
                    {this.state.PostDetail[0] &&
-                    <Content  data={PostData} />
+                    <Content  dataPost={PostData} />
                     }
                     {this.state.CategoriesDetail[0] &&
                     <ContentCate  data={CategoriesData} />
                     }
                     {this.state.PagesDetail[0] &&
-                    <Content  data={PageData} />
+                    <Content  dataCate={PageData} />
                     }
                   </>
         )}
