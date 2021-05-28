@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 import LazyLoad from 'react-lazyload';
 import API from "../../lib/api";
 import PlaceholderMenu from "../../components/placeholder/menu";

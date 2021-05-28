@@ -20,9 +20,9 @@ export default class PostDetail extends Component {
       
     }
   }
-  getPostData = () => API.get('/posts/?slug=' + this.state.Slug).catch(err => null);
-  getCategoriesData = () => API.get('/categories/?slug=' + this.state.Slug).catch(err => null);
-  getPagesData = () => API.get('/pages/?slug=' + this.state.Slug).catch(err => null);
+  getPostData = () => API.get('/posts/?slug=' + window.location.pathname.slice(1)).catch(err => null);
+  getCategoriesData = () => API.get('/categories/?slug=' + window.location.pathname.slice(1)).catch(err => null);
+  getPagesData = () => API.get('/pages/?slug=' + window.location.pathname.slice(1)).catch(err => null);
 
   async componentDidMount() {
     try {
@@ -41,6 +41,7 @@ export default class PostDetail extends Component {
     }
   }
   render() {
+    console.log(window.location.pathname.slice(1), this.state.Slug);
       var PostData = this.state.PostDetail[0];
       var PageData = this.state.PagesDetail[0];
       var CategoriesData = this.state.CategoriesDetail[0];

@@ -67,3 +67,6 @@ axios.all([getUserAccount(), getUserPermissions()])
 // get  related posts API in WordPress?
 https://api-fast.ml/wp-json/wp/v2/posts/related/227
 //
+
+/// lang muti
+https://viblo.asia/p/nextjs-da-ngon-ngu-khong-can-thu-vien-ngoai-Eb85oe0OZ2G
